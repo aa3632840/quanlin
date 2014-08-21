@@ -1,0 +1,9 @@
+{% if dingdan_list %}
+    <ul>
+    {% for dingdan in dingdan_list %}
+        <li><a href="{% url 'quanlin:detail' dingdan.id %}">{{ dingdan.dingdan_bianhao }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

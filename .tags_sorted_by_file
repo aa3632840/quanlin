@@ -1,0 +1,417 @@
+DanpinAdmin	quanlin\admin.py	/^class DanpinAdmin(admin.ModelAdmin):$/;"	c
+DingDanAdmin	quanlin\admin.py	/^class DingDanAdmin(admin.ModelAdmin):$/;"	c
+DingDanInline	quanlin\admin.py	/^class DingDanInline(admin.TabularInline ):$/;"	c
+TaocanAdmin	quanlin\admin.py	/^class TaocanAdmin(admin.ModelAdmin):$/;"	c
+TaocanDetailAdmin	quanlin\admin.py	/^class TaocanDetailAdmin(admin.ModelAdmin):$/;"	c
+DingdanAdmin	quanlin\adminx.py	/^class DingdanAdmin(object):$/;"	c
+DingdanDetailAdmin	quanlin\adminx.py	/^class DingdanDetailAdmin(object):$/;"	c
+Danpin	quanlin\models.py	/^class Danpin(models.Model):$/;"	c
+Dingdan	quanlin\models.py	/^class Dingdan(DingdanPtr):$/;"	c
+DingdanDetail	quanlin\models.py	/^class DingdanDetail(DingdanPtr) :$/;"	c
+DingdanPtr	quanlin\models.py	/^class DingdanPtr(models.Model):$/;"	c
+Meta	quanlin\models.py	/^    class Meta :$/;"	c
+Meta	quanlin\models.py	/^    class Meta:$/;"	c
+Orders_detail	quanlin\models.py	/^    def Orders_detail(self):$/;"	m	class:Dingdan
+PackageDetail	quanlin\models.py	/^class PackageDetail(models.Model) :$/;"	c
+Taocan	quanlin\models.py	/^class Taocan(models.Model):$/;"	c
+__unicode__	quanlin\models.py	/^    def __unicode__(self):$/;"	m	class:Danpin	file:
+__unicode__	quanlin\models.py	/^    def __unicode__(self):$/;"	m	class:Taocan	file:
+addTaocanDetail	quanlin\models.py	/^    def addTaocanDetail(self,danpin=None,count=0):$/;"	m	class:Taocan
+colored_name	quanlin\models.py	/^    def colored_name(self):$/;"	m	class:Dingdan
+getDingdanDetails	quanlin\models.py	/^    def getDingdanDetails(self):$/;"	m	class:Dingdan
+getOrderDetails	quanlin\models.py	/^    def getOrderDetails(self):$/;"	m	class:Dingdan
+initInfos	quanlin\models.py	/^    def initInfos(self,ptrDingdan,danpin_huohao,danpin_count,danpin_jiage):$/;"	m	class:DingdanDetail
+pay_Month	quanlin\models.py	/^    def pay_Month(self):$/;"	m	class:Dingdan
+reloadtest	quanlin\models.py	/^def reloadtest():$/;"	f
+syncTaocan	quanlin\models.py	/^def syncTaocan():$/;"	f
+findForm	static\admin\js\SelectFilter2.js	/^function findForm(node) {$/;"	f
+dismissAddAnotherPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function dismissAddAnotherPopup(win, newId, newRepr) {$/;"	f
+dismissRelatedLookupPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function dismissRelatedLookupPopup(win, chosenId) {$/;"	f
+html_unescape	static\admin\js\admin\RelatedObjectLookups.js	/^function html_unescape(text) {$/;"	f
+id_to_windowname	static\admin\js\admin\RelatedObjectLookups.js	/^function id_to_windowname(text) {$/;"	f
+showAddAnotherPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function showAddAnotherPopup(triggeringLink) {$/;"	f
+showRelatedObjectLookupPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function showRelatedObjectLookupPopup(triggeringLink) {$/;"	f
+windowname_to_id	static\admin\js\admin\RelatedObjectLookups.js	/^function windowname_to_id(text) {$/;"	f
+Calendar	static\admin\js\calendar.js	/^function Calendar(div_id, callback) {$/;"	f
+addEvent	static\admin\js\core.js	/^function addEvent(obj, evType, fn) {$/;"	f
+cancelEventPropagation	static\admin\js\core.js	/^function cancelEventPropagation(e) {$/;"	f
+findPosX	static\admin\js\core.js	/^function findPosX(obj) {$/;"	f
+findPosY	static\admin\js\core.js	/^function findPosY(obj) {$/;"	f
+getStyle	static\admin\js\core.js	/^function getStyle(oElm, strCssRule){$/;"	f
+quickElement	static\admin\js\core.js	/^function quickElement() {$/;"	f
+removeChildren	static\admin\js\core.js	/^function removeChildren(a) {$/;"	f
+removeEvent	static\admin\js\core.js	/^function removeEvent(obj, evType, fn) {$/;"	f
+Animation	static\admin\js\jquery.js	/^function Animation( elem, properties, options ) {$/;"	f
+Sizzle	static\admin\js\jquery.js	/^function Sizzle( selector, context, results, seed ) {$/;"	f
+Tween	static\admin\js\jquery.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+actualDisplay	static\admin\js\jquery.js	/^function actualDisplay( name, doc ) {$/;"	f
+addCombinator	static\admin\js\jquery.js	/^function addCombinator( matcher, combinator, base ) {$/;"	f
+addToPrefiltersOrTransports	static\admin\js\jquery.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+ajaxConvert	static\admin\js\jquery.js	/^function ajaxConvert( s, response ) {$/;"	f
+ajaxExtend	static\admin\js\jquery.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	static\admin\js\jquery.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+assert	static\admin\js\jquery.js	/^function assert( fn ) {$/;"	f
+augmentWidthOrHeight	static\admin\js\jquery.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+buildParams	static\admin\js\jquery.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	static\admin\js\jquery.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+condense	static\admin\js\jquery.js	/^function condense( unmatched, map, filter, context, xml ) {$/;"	f
+createActiveXHR	static\admin\js\jquery.js	/^function createActiveXHR() {$/;"	f
+createButtonPseudo	static\admin\js\jquery.js	/^function createButtonPseudo( type ) {$/;"	f
+createCache	static\admin\js\jquery.js	/^function createCache() {$/;"	f
+createFxNow	static\admin\js\jquery.js	/^function createFxNow() {$/;"	f
+createInputPseudo	static\admin\js\jquery.js	/^function createInputPseudo( type ) {$/;"	f
+createOptions	static\admin\js\jquery.js	/^function createOptions( options ) {$/;"	f
+createPositionalPseudo	static\admin\js\jquery.js	/^function createPositionalPseudo( fn ) {$/;"	f
+createSafeFragment	static\admin\js\jquery.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	static\admin\js\jquery.js	/^function createStandardXHR() {$/;"	f
+createTweens	static\admin\js\jquery.js	/^function createTweens( animation, props ) {$/;"	f
+css_defaultDisplay	static\admin\js\jquery.js	/^function css_defaultDisplay( nodeName ) {$/;"	f
+dataAttr	static\admin\js\jquery.js	/^function dataAttr( elem, key, data ) {$/;"	f
+defaultPrefilter	static\admin\js\jquery.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+disableScript	static\admin\js\jquery.js	/^function disableScript( elem ) {$/;"	f
+done	static\admin\js\jquery.js	/^		function done( status, nativeStatusText, responses, headers ) {$/;"	f
+elementMatcher	static\admin\js\jquery.js	/^function elementMatcher( matchers ) {$/;"	f
+findOrAppend	static\admin\js\jquery.js	/^function findOrAppend( elem, tag ) {$/;"	f
+fixCloneNodeIssues	static\admin\js\jquery.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	static\admin\js\jquery.js	/^function fixDefaultChecked( elem ) {$/;"	f
+genFx	static\admin\js\jquery.js	/^function genFx( type, includeWidth ) {$/;"	f
+getAll	static\admin\js\jquery.js	/^function getAll( context, tag ) {$/;"	f
+getWidthOrHeight	static\admin\js\jquery.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	static\admin\js\jquery.js	/^function getWindow( elem ) {$/;"	f
+inspect	static\admin\js\jquery.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports	static\admin\js\jquery.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+internalData	static\admin\js\jquery.js	/^function internalData( elem, name, data, pvt \/* Internal Use Only *\/ ){$/;"	f
+internalRemoveData	static\admin\js\jquery.js	/^function internalRemoveData( elem, name, pvt ) {$/;"	f
+isArraylike	static\admin\js\jquery.js	/^function isArraylike( obj ) {$/;"	f
+isEmptyDataObject	static\admin\js\jquery.js	/^function isEmptyDataObject( obj ) {$/;"	f
+isHidden	static\admin\js\jquery.js	/^function isHidden( elem, el ) {$/;"	f
+isNative	static\admin\js\jquery.js	/^function isNative( fn ) {$/;"	f
+markFunction	static\admin\js\jquery.js	/^function markFunction( fn ) {$/;"	f
+matcherFromGroupMatchers	static\admin\js\jquery.js	/^function matcherFromGroupMatchers( elementMatchers, setMatchers ) {$/;"	f
+matcherFromTokens	static\admin\js\jquery.js	/^function matcherFromTokens( tokens ) {$/;"	f
+multipleContexts	static\admin\js\jquery.js	/^function multipleContexts( selector, contexts, results ) {$/;"	f
+propFilter	static\admin\js\jquery.js	/^function propFilter( props, specialEasing ) {$/;"	f
+restoreScript	static\admin\js\jquery.js	/^function restoreScript( elem ) {$/;"	f
+returnFalse	static\admin\js\jquery.js	/^function returnFalse() {$/;"	f
+returnTrue	static\admin\js\jquery.js	/^function returnTrue() {$/;"	f
+select	static\admin\js\jquery.js	/^function select( selector, context, results, seed ) {$/;"	f
+setFilters	static\admin\js\jquery.js	/^function setFilters() {}$/;"	f
+setGlobalEval	static\admin\js\jquery.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setMatcher	static\admin\js\jquery.js	/^function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {$/;"	f
+setPositiveNumber	static\admin\js\jquery.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	static\admin\js\jquery.js	/^function showHide( elements, show ) {$/;"	f
+sibling	static\admin\js\jquery.js	/^function sibling( cur, dir ) {$/;"	f
+siblingCheck	static\admin\js\jquery.js	/^function siblingCheck( a, b ) {$/;"	f
+toSelector	static\admin\js\jquery.js	/^function toSelector( tokens ) {$/;"	f
+tokenize	static\admin\js\jquery.js	/^function tokenize( selector, parseOnly ) {$/;"	f
+vendorPropName	static\admin\js\jquery.js	/^function vendorPropName( style, name ) {$/;"	f
+winnow	static\admin\js\jquery.js	/^function winnow( elements, qualifier, keep ) {$/;"	f
+parseTimeString	static\admin\js\timeparse.js	/^function parseTimeString(s) {$/;"	f
+URLify	static\admin\js\urlify.js	/^function URLify(s, num_chars) {$/;"	f
+showTooltip	static\xadmin\js\xadmin.plugin.charts.js	/^    function showTooltip(x, y, contents) {$/;"	f
+addShowLess	static\xadmin\js\xadmin.plugin.quickfilter.js	/^  function addShowLess($,v){$/;"	f
+addShowMore	static\xadmin\js\xadmin.plugin.quickfilter.js	/^  function addShowMore($,v){$/;"	f
+UTCDate	static\xadmin\vendor\bootstrap-datepicker\js\bootstrap-datepicker.js	/^	function UTCDate(){$/;"	f
+UTCToday	static\xadmin\vendor\bootstrap-datepicker\js\bootstrap-datepicker.js	/^	function UTCToday(){$/;"	f
+targetIsSelf	static\xadmin\vendor\bootstrap-modal\js\bootstrap-modalmanager.js	/^	function targetIsSelf(callback){$/;"	f
+Multiselect	static\xadmin\vendor\bootstrap-multiselect\js\bootstrap-multiselect.js	/^	function Multiselect(select, options) {$/;"	f
+ScrollSpy	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^  function ScrollSpy(element, options) {$/;"	f
+clearMenus	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^  function clearMenus() {$/;"	f
+complete	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^    function complete() {$/;"	f
+getParent	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^  function getParent($this) {$/;"	f
+next	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^    function next() {$/;"	f
+removeElement	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^    function removeElement() {$/;"	f
+transitionEnd	static\xadmin\vendor\bootstrap\js\bootstrap.js	/^  function transitionEnd() {$/;"	f
+CanvasGradient_	static\xadmin\vendor\flot\excanvas.js	/^  function CanvasGradient_(aType) {$/;"	f
+CanvasPattern_	static\xadmin\vendor\flot\excanvas.js	/^  function CanvasPattern_(image, repetition) {$/;"	f
+CanvasRenderingContext2D_	static\xadmin\vendor\flot\excanvas.js	/^  function CanvasRenderingContext2D_(canvasElement) {$/;"	f
+DOMException_	static\xadmin\vendor\flot\excanvas.js	/^  function DOMException_(s) {$/;"	f
+addNamespace	static\xadmin\vendor\flot\excanvas.js	/^  function addNamespace(doc, prefix, urn) {$/;"	f
+addNamespacesAndStylesheet	static\xadmin\vendor\flot\excanvas.js	/^  function addNamespacesAndStylesheet(doc) {$/;"	f
+appendFill	static\xadmin\vendor\flot\excanvas.js	/^  function appendFill(ctx, lineStr, min, max) {$/;"	f
+appendStroke	static\xadmin\vendor\flot\excanvas.js	/^  function appendStroke(ctx, lineStr) {$/;"	f
+assertImageIsValid	static\xadmin\vendor\flot\excanvas.js	/^  function assertImageIsValid(img) {$/;"	f
+bezierCurveTo	static\xadmin\vendor\flot\excanvas.js	/^  function bezierCurveTo(self, cp1, cp2, p) {$/;"	f
+bind	static\xadmin\vendor\flot\excanvas.js	/^  function bind(f, obj, var_args) {$/;"	f
+buildStyle	static\xadmin\vendor\flot\excanvas.js	/^  function buildStyle(style) {$/;"	f
+clamp	static\xadmin\vendor\flot\excanvas.js	/^  function clamp(v, min, max) {$/;"	f
+copyState	static\xadmin\vendor\flot\excanvas.js	/^  function copyState(o1, o2) {$/;"	f
+createMatrixIdentity	static\xadmin\vendor\flot\excanvas.js	/^  function createMatrixIdentity() {$/;"	f
+encodeHtmlAttribute	static\xadmin\vendor\flot\excanvas.js	/^  function encodeHtmlAttribute(s) {$/;"	f
+getComputedStyle	static\xadmin\vendor\flot\excanvas.js	/^  function getComputedStyle(style, element) {$/;"	f
+getContext	static\xadmin\vendor\flot\excanvas.js	/^  function getContext() {$/;"	f
+getCoords	static\xadmin\vendor\flot\excanvas.js	/^  function getCoords(ctx, aX, aY) {$/;"	f
+getRgbHslContent	static\xadmin\vendor\flot\excanvas.js	/^  function getRgbHslContent(styleString) {$/;"	f
+hslToRgb	static\xadmin\vendor\flot\excanvas.js	/^  function hslToRgb(parts){$/;"	f
+hueToRgb	static\xadmin\vendor\flot\excanvas.js	/^  function hueToRgb(m1, m2, h) {$/;"	f
+matrixIsFinite	static\xadmin\vendor\flot\excanvas.js	/^  function matrixIsFinite(m) {$/;"	f
+matrixMultiply	static\xadmin\vendor\flot\excanvas.js	/^  function matrixMultiply(m1, m2) {$/;"	f
+onPropertyChange	static\xadmin\vendor\flot\excanvas.js	/^  function onPropertyChange(e) {$/;"	f
+onResize	static\xadmin\vendor\flot\excanvas.js	/^  function onResize(e) {$/;"	f
+percent	static\xadmin\vendor\flot\excanvas.js	/^  function percent(s) {$/;"	f
+processFontStyle	static\xadmin\vendor\flot\excanvas.js	/^  function processFontStyle(styleString) {$/;"	f
+processLineCap	static\xadmin\vendor\flot\excanvas.js	/^  function processLineCap(lineCap) {$/;"	f
+processStyle	static\xadmin\vendor\flot\excanvas.js	/^  function processStyle(styleString) {$/;"	f
+setM	static\xadmin\vendor\flot\excanvas.js	/^  function setM(ctx, m, updateLineScale) {$/;"	f
+throwException	static\xadmin\vendor\flot\excanvas.js	/^  function throwException(s) {$/;"	f
+clamp	static\xadmin\vendor\flot\jquery.colorhelpers.js	/^            function clamp(min, value, max) {$/;"	f
+groupByAxis	static\xadmin\vendor\flot\jquery.flot.aggregate.js	/^    function groupByAxis(data,axis) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.aggregate.js	/^    function init(plot) {$/;"	f
+processRawData	static\xadmin\vendor\flot\jquery.flot.aggregate.js	/^    function processRawData(plot, series, data, datapoints) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.canvas.js	/^	function init(plot, classes) {$/;"	f
+categoriesTickGenerator	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function categoriesTickGenerator(axis) {$/;"	f
+getNextIndex	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function getNextIndex(categories) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function init(plot) {$/;"	f
+processDatapoints	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function processDatapoints(plot, series, datapoints) {$/;"	f
+processRawData	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function processRawData(plot, series, data, datapoints) {$/;"	f
+setupCategoriesForAxis	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function setupCategoriesForAxis(series, axis, datapoints) {$/;"	f
+transformPointsOnAxis	static\xadmin\vendor\flot\jquery.flot.categories.js	/^    function transformPointsOnAxis(datapoints, axis, categories) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.crosshair.js	/^    function init(plot) {$/;"	f
+onMouseMove	static\xadmin\vendor\flot\jquery.flot.crosshair.js	/^        function onMouseMove(e) {$/;"	f
+onMouseOut	static\xadmin\vendor\flot\jquery.flot.crosshair.js	/^        function onMouseOut(e) {$/;"	f
+draw	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function draw(plot, ctx){$/;"	f
+drawError	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function drawError(ctx,err,x,y,upper,lower,drawUpper,drawLower,radius,offset,minmax){$/;"	f
+drawPath	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function drawPath(ctx, pts){$/;"	f
+drawSemiCircle	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^	function drawSemiCircle( ctx, x, y, radius ) {$/;"	f
+drawSeriesErrors	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function drawSeriesErrors(plot, ctx, s){$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function init(plot) {$/;"	f
+parseErrors	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function parseErrors(series, i){$/;"	f
+processRawData	static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function processRawData(plot, series, data, datapoints){$/;"	f
+computeFillBottoms	static\xadmin\vendor\flot\jquery.flot.fillbetween.js	/^		function computeFillBottoms( plot, s, datapoints ) {$/;"	f
+findBottomSeries	static\xadmin\vendor\flot\jquery.flot.fillbetween.js	/^		function findBottomSeries( s, allseries ) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.fillbetween.js	/^	function init( plot ) {$/;"	f
+drawSeries	static\xadmin\vendor\flot\jquery.flot.image.js	/^    function drawSeries(plot, ctx, series) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.image.js	/^    function init(plot) {$/;"	f
+processRawData	static\xadmin\vendor\flot\jquery.flot.image.js	/^    function processRawData(plot, series, data, datapoints) {$/;"	f
+Canvas	static\xadmin\vendor\flot\jquery.flot.js	/^	function Canvas(cls, container) {$/;"	f
+Plot	static\xadmin\vendor\flot\jquery.flot.js	/^    function Plot(placeholder, data_, options_, plugins) {$/;"	f
+adjustLayoutForThingsStickingOut	static\xadmin\vendor\flot\jquery.flot.js	/^        function adjustLayoutForThingsStickingOut() {$/;"	f
+allAxes	static\xadmin\vendor\flot\jquery.flot.js	/^        function allAxes() {$/;"	f
+allocateAxisBoxFirstPhase	static\xadmin\vendor\flot\jquery.flot.js	/^        function allocateAxisBoxFirstPhase(axis) {$/;"	f
+allocateAxisBoxSecondPhase	static\xadmin\vendor\flot\jquery.flot.js	/^        function allocateAxisBoxSecondPhase(axis) {$/;"	f
+axisNumber	static\xadmin\vendor\flot\jquery.flot.js	/^        function axisNumber(obj, coord) {$/;"	f
+axisToCanvasCoords	static\xadmin\vendor\flot\jquery.flot.js	/^        function axisToCanvasCoords(pos) {$/;"	f
+bindEvents	static\xadmin\vendor\flot\jquery.flot.js	/^        function bindEvents() {$/;"	f
+canvasToAxisCoords	static\xadmin\vendor\flot\jquery.flot.js	/^        function canvasToAxisCoords(pos) {$/;"	f
+draw	static\xadmin\vendor\flot\jquery.flot.js	/^        function draw() {$/;"	f
+drawAxisLabels	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawAxisLabels() {$/;"	f
+drawBackground	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawBackground() {$/;"	f
+drawBar	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawBar(x, y, b, barLeft, barRight, offset, fillStyleCallback, axisx, axisy, c, horizontal, lineWidth) {$/;"	f
+drawBarHighlight	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawBarHighlight(series, point) {$/;"	f
+drawGrid	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawGrid() {$/;"	f
+drawOverlay	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawOverlay() {$/;"	f
+drawPointHighlight	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawPointHighlight(series, point) {$/;"	f
+drawSeries	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawSeries(series) {$/;"	f
+drawSeriesBars	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawSeriesBars(series) {$/;"	f
+drawSeriesLines	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawSeriesLines(series) {$/;"	f
+drawSeriesPoints	static\xadmin\vendor\flot\jquery.flot.js	/^        function drawSeriesPoints(series) {$/;"	f
+executeHooks	static\xadmin\vendor\flot\jquery.flot.js	/^        function executeHooks(hook, args) {$/;"	f
+extractRange	static\xadmin\vendor\flot\jquery.flot.js	/^        function extractRange(ranges, coord) {$/;"	f
+fillInSeriesOptions	static\xadmin\vendor\flot\jquery.flot.js	/^        function fillInSeriesOptions() {$/;"	f
+findNearbyItem	static\xadmin\vendor\flot\jquery.flot.js	/^        function findNearbyItem(mouseX, mouseY, seriesFilter) {$/;"	f
+floorInBase	static\xadmin\vendor\flot\jquery.flot.js	/^    function floorInBase(n, base) {$/;"	f
+getColorOrGradient	static\xadmin\vendor\flot\jquery.flot.js	/^        function getColorOrGradient(spec, bottom, top, defaultColor) {$/;"	f
+getFillStyle	static\xadmin\vendor\flot\jquery.flot.js	/^        function getFillStyle(filloptions, seriesColor, bottom, top) {$/;"	f
+getOrCreateAxis	static\xadmin\vendor\flot\jquery.flot.js	/^        function getOrCreateAxis(axes, number) {$/;"	f
+highlight	static\xadmin\vendor\flot\jquery.flot.js	/^        function highlight(s, point, auto) {$/;"	f
+identity	static\xadmin\vendor\flot\jquery.flot.js	/^            function identity(x) { return x; }$/;"	f
+indexOfHighlight	static\xadmin\vendor\flot\jquery.flot.js	/^        function indexOfHighlight(s, p) {$/;"	f
+initPlugins	static\xadmin\vendor\flot\jquery.flot.js	/^        function initPlugins() {$/;"	f
+insertLegend	static\xadmin\vendor\flot\jquery.flot.js	/^        function insertLegend() {$/;"	f
+measureTickLabels	static\xadmin\vendor\flot\jquery.flot.js	/^        function measureTickLabels(axis) {$/;"	f
+onClick	static\xadmin\vendor\flot\jquery.flot.js	/^        function onClick(e) {$/;"	f
+onMouseLeave	static\xadmin\vendor\flot\jquery.flot.js	/^        function onMouseLeave(e) {$/;"	f
+onMouseMove	static\xadmin\vendor\flot\jquery.flot.js	/^        function onMouseMove(e) {$/;"	f
+parseData	static\xadmin\vendor\flot\jquery.flot.js	/^        function parseData(d) {$/;"	f
+parseOptions	static\xadmin\vendor\flot\jquery.flot.js	/^        function parseOptions(opts) {$/;"	f
+plotBars	static\xadmin\vendor\flot\jquery.flot.js	/^            function plotBars(datapoints, barLeft, barRight, offset, fillStyleCallback, axisx, axisy) {$/;"	f
+plotLine	static\xadmin\vendor\flot\jquery.flot.js	/^            function plotLine(datapoints, xoffset, yoffset, axisx, axisy) {$/;"	f
+plotLineArea	static\xadmin\vendor\flot\jquery.flot.js	/^            function plotLineArea(datapoints, axisx, axisy) {$/;"	f
+plotPoints	static\xadmin\vendor\flot\jquery.flot.js	/^            function plotPoints(datapoints, radius, fillStyle, offset, shadow, axisx, axisy, symbol) {$/;"	f
+processData	static\xadmin\vendor\flot\jquery.flot.js	/^        function processData() {$/;"	f
+setData	static\xadmin\vendor\flot\jquery.flot.js	/^        function setData(d) {$/;"	f
+setRange	static\xadmin\vendor\flot\jquery.flot.js	/^        function setRange(axis) {$/;"	f
+setTicks	static\xadmin\vendor\flot\jquery.flot.js	/^        function setTicks(axis) {$/;"	f
+setTransformationHelpers	static\xadmin\vendor\flot\jquery.flot.js	/^        function setTransformationHelpers(axis) {$/;"	f
+setupCanvases	static\xadmin\vendor\flot\jquery.flot.js	/^        function setupCanvases() {$/;"	f
+setupGrid	static\xadmin\vendor\flot\jquery.flot.js	/^        function setupGrid() {$/;"	f
+setupTickGeneration	static\xadmin\vendor\flot\jquery.flot.js	/^        function setupTickGeneration(axis) {$/;"	f
+shutdown	static\xadmin\vendor\flot\jquery.flot.js	/^        function shutdown() {$/;"	f
+snapRangeToTicks	static\xadmin\vendor\flot\jquery.flot.js	/^        function snapRangeToTicks(axis, ticks) {$/;"	f
+triggerClickHoverEvent	static\xadmin\vendor\flot\jquery.flot.js	/^        function triggerClickHoverEvent(eventname, event, seriesFilter) {$/;"	f
+triggerRedrawOverlay	static\xadmin\vendor\flot\jquery.flot.js	/^        function triggerRedrawOverlay() {$/;"	f
+unhighlight	static\xadmin\vendor\flot\jquery.flot.js	/^        function unhighlight(s, point) {$/;"	f
+updateAxis	static\xadmin\vendor\flot\jquery.flot.js	/^            function updateAxis(axis, min, max) {$/;"	f
+bindEvents	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function bindEvents(plot, eventHolder) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^    function init(plot) {$/;"	f
+onDrag	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onDrag(e) {$/;"	f
+onDragEnd	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onDragEnd(e) {$/;"	f
+onDragStart	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onDragStart(e) {$/;"	f
+onMouseWheel	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onMouseWheel(e, delta) {$/;"	f
+onZoomClick	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onZoomClick(e, zoomOut) {$/;"	f
+shutdown	static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function shutdown(plot, eventHolder) {$/;"	f
+clear	static\xadmin\vendor\flot\jquery.flot.pie.js	/^			function clear() {$/;"	f
+combine	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function combine(data) {$/;"	f
+draw	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function draw(plot, newCtx) {$/;"	f
+drawDonutHole	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function drawDonutHole(layer) {$/;"	f
+drawHighlight	static\xadmin\vendor\flot\jquery.flot.pie.js	/^			function drawHighlight(series) {$/;"	f
+drawLabel	static\xadmin\vendor\flot\jquery.flot.pie.js	/^					function drawLabel(slice, startAngle, index) {$/;"	f
+drawLabels	static\xadmin\vendor\flot\jquery.flot.pie.js	/^				function drawLabels() {$/;"	f
+drawOverlay	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function drawOverlay(plot, octx) {$/;"	f
+drawPie	static\xadmin\vendor\flot\jquery.flot.pie.js	/^			function drawPie() {$/;"	f
+drawShadow	static\xadmin\vendor\flot\jquery.flot.pie.js	/^			function drawShadow() {$/;"	f
+drawSlice	static\xadmin\vendor\flot\jquery.flot.pie.js	/^				function drawSlice(angle, color, fill) {$/;"	f
+findNearbySlice	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function findNearbySlice(mouseX, mouseY) {$/;"	f
+highlight	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function highlight(s, auto) {$/;"	f
+indexOfHighlight	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function indexOfHighlight(s) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.pie.js	/^	function init(plot) {$/;"	f
+isPointInPoly	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function isPointInPoly(poly, pt) {$/;"	f
+onClick	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function onClick(e) {$/;"	f
+onMouseMove	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function onMouseMove(e) {$/;"	f
+processDatapoints	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function processDatapoints(plot, series, datapoints) {$/;"	f
+triggerClickHoverEvent	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function triggerClickHoverEvent(eventname, e) {$/;"	f
+unhighlight	static\xadmin\vendor\flot\jquery.flot.pie.js	/^		function unhighlight(s) {$/;"	f
+bindEvents	static\xadmin\vendor\flot\jquery.flot.resize.js	/^        function bindEvents(plot, eventHolder) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.resize.js	/^    function init(plot) {$/;"	f
+onResize	static\xadmin\vendor\flot\jquery.flot.resize.js	/^        function onResize() {$/;"	f
+shutdown	static\xadmin\vendor\flot\jquery.flot.resize.js	/^        function shutdown(plot, eventHolder) {$/;"	f
+clamp	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function clamp(min, value, max) {$/;"	f
+clearSelection	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function clearSelection(preventEvent) {$/;"	f
+extractRange	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function extractRange(ranges, coord) {$/;"	f
+getSelection	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function getSelection() {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.selection.js	/^    function init(plot) {$/;"	f
+onMouseDown	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function onMouseDown(e) {$/;"	f
+onMouseMove	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function onMouseMove(e) {$/;"	f
+onMouseUp	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function onMouseUp(e) {$/;"	f
+selectionIsSane	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function selectionIsSane() {$/;"	f
+setSelection	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function setSelection(ranges, preventEvent) {$/;"	f
+setSelectionPos	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function setSelectionPos(pos, e) {$/;"	f
+triggerSelectedEvent	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function triggerSelectedEvent() {$/;"	f
+updateSelection	static\xadmin\vendor\flot\jquery.flot.selection.js	/^        function updateSelection(pos) {$/;"	f
+findMatchingSeries	static\xadmin\vendor\flot\jquery.flot.stack.js	/^        function findMatchingSeries(s, allseries) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.stack.js	/^    function init(plot) {$/;"	f
+stackData	static\xadmin\vendor\flot\jquery.flot.stack.js	/^        function stackData(plot, s, datapoints) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.symbol.js	/^    function init(plot) {$/;"	f
+processRawData	static\xadmin\vendor\flot\jquery.flot.symbol.js	/^    function processRawData(plot, series, datapoints) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.threshold.js	/^    function init(plot) {$/;"	f
+processThresholds	static\xadmin\vendor\flot\jquery.flot.threshold.js	/^        function processThresholds(plot, s, datapoints) {$/;"	f
+thresholdData	static\xadmin\vendor\flot\jquery.flot.threshold.js	/^        function thresholdData(plot, s, datapoints, below, color) {$/;"	f
+addProxyMethod	static\xadmin\vendor\flot\jquery.flot.time.js	/^		function addProxyMethod(sourceObj, sourceMethod, targetObj, targetMethod) {$/;"	f
+dateGenerator	static\xadmin\vendor\flot\jquery.flot.time.js	/^	function dateGenerator(ts, opts) {$/;"	f
+floorInBase	static\xadmin\vendor\flot\jquery.flot.time.js	/^	function floorInBase(n, base) {$/;"	f
+formatDate	static\xadmin\vendor\flot\jquery.flot.time.js	/^	function formatDate(d, fmt, monthNames, dayNames) {$/;"	f
+init	static\xadmin\vendor\flot\jquery.flot.time.js	/^	function init(plot) {$/;"	f
+makeUtcWrapper	static\xadmin\vendor\flot\jquery.flot.time.js	/^	function makeUtcWrapper(d) {$/;"	f
+focusable	static\xadmin\vendor\jquery-ui\jquery.ui.core.js	/^function focusable( element, isTabIndexNotNaN ) {$/;"	f
+reduce	static\xadmin\vendor\jquery-ui\jquery.ui.core.js	/^		function reduce( elem, size, border, margin ) {$/;"	f
+visible	static\xadmin\vendor\jquery-ui\jquery.ui.core.js	/^function visible( element ) {$/;"	f
+_normalizeArguments	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function _normalizeArguments( effect, options, speed, callback ) {$/;"	f
+clamp	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function clamp( value, prop, allowEmpty ) {$/;"	f
+done	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^			function done() {$/;"	f
+getElementStyles	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function getElementStyles( elem ) {$/;"	f
+hue2rgb	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function hue2rgb( p, q, h ) {$/;"	f
+run	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^		function run( next ) {$/;"	f
+standardAnimationOption	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function standardAnimationOption( option ) {$/;"	f
+stringParse	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function stringParse( string ) {$/;"	f
+styleDifference	static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function styleDifference( oldStyle, newStyle ) {$/;"	f
+isFloating	static\xadmin\vendor\jquery-ui\jquery.ui.sortable.js	/^function isFloating(item) {$/;"	f
+isOverAxis	static\xadmin\vendor\jquery-ui\jquery.ui.sortable.js	/^function isOverAxis( x, reference, size ) {$/;"	f
+handlerProxy	static\xadmin\vendor\jquery-ui\jquery.ui.widget.js	/^			function handlerProxy() {$/;"	f
+handlerProxy	static\xadmin\vendor\jquery-ui\jquery.ui.widget.js	/^		function handlerProxy() {$/;"	f
+Animation	static\xadmin\vendor\jquery\jquery.js	/^function Animation( elem, properties, options ) {$/;"	f
+Data	static\xadmin\vendor\jquery\jquery.js	/^function Data() {$/;"	f
+Sizzle	static\xadmin\vendor\jquery\jquery.js	/^function Sizzle( selector, context, results, seed ) {$/;"	f
+Tween	static\xadmin\vendor\jquery\jquery.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+actualDisplay	static\xadmin\vendor\jquery\jquery.js	/^function actualDisplay( name, doc ) {$/;"	f
+addCombinator	static\xadmin\vendor\jquery\jquery.js	/^function addCombinator( matcher, combinator, base ) {$/;"	f
+addToPrefiltersOrTransports	static\xadmin\vendor\jquery\jquery.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+ajaxConvert	static\xadmin\vendor\jquery\jquery.js	/^function ajaxConvert( s, response, jqXHR, isSuccess ) {$/;"	f
+ajaxExtend	static\xadmin\vendor\jquery\jquery.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	static\xadmin\vendor\jquery\jquery.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+assert	static\xadmin\vendor\jquery\jquery.js	/^function assert( fn ) {$/;"	f
+augmentWidthOrHeight	static\xadmin\vendor\jquery\jquery.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+boolHandler	static\xadmin\vendor\jquery\jquery.js	/^function boolHandler( elem, name, isXML ) {$/;"	f
+buildParams	static\xadmin\vendor\jquery\jquery.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+cloneCopyEvent	static\xadmin\vendor\jquery\jquery.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+condense	static\xadmin\vendor\jquery\jquery.js	/^function condense( unmatched, map, filter, context, xml ) {$/;"	f
+createButtonPseudo	static\xadmin\vendor\jquery\jquery.js	/^function createButtonPseudo( type ) {$/;"	f
+createCache	static\xadmin\vendor\jquery\jquery.js	/^function createCache() {$/;"	f
+createFxNow	static\xadmin\vendor\jquery\jquery.js	/^function createFxNow() {$/;"	f
+createInputPseudo	static\xadmin\vendor\jquery\jquery.js	/^function createInputPseudo( type ) {$/;"	f
+createOptions	static\xadmin\vendor\jquery\jquery.js	/^function createOptions( options ) {$/;"	f
+createPositionalPseudo	static\xadmin\vendor\jquery\jquery.js	/^function createPositionalPseudo( fn ) {$/;"	f
+createTweens	static\xadmin\vendor\jquery\jquery.js	/^function createTweens( animation, props ) {$/;"	f
+css_defaultDisplay	static\xadmin\vendor\jquery\jquery.js	/^function css_defaultDisplay( nodeName ) {$/;"	f
+dataAttr	static\xadmin\vendor\jquery\jquery.js	/^function dataAttr( elem, key, data ) {$/;"	f
+defaultPrefilter	static\xadmin\vendor\jquery\jquery.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+disableScript	static\xadmin\vendor\jquery\jquery.js	/^function disableScript( elem ) {$/;"	f
+done	static\xadmin\vendor\jquery\jquery.js	/^		function done( status, nativeStatusText, responses, headers ) {$/;"	f
+elementMatcher	static\xadmin\vendor\jquery\jquery.js	/^function elementMatcher( matchers ) {$/;"	f
+fixInput	static\xadmin\vendor\jquery\jquery.js	/^function fixInput( src, dest ) {$/;"	f
+genFx	static\xadmin\vendor\jquery\jquery.js	/^function genFx( type, includeWidth ) {$/;"	f
+getAll	static\xadmin\vendor\jquery\jquery.js	/^function getAll( context, tag ) {$/;"	f
+getStyles	static\xadmin\vendor\jquery\jquery.js	/^function getStyles( elem ) {$/;"	f
+getWidthOrHeight	static\xadmin\vendor\jquery\jquery.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	static\xadmin\vendor\jquery\jquery.js	/^function getWindow( elem ) {$/;"	f
+inspect	static\xadmin\vendor\jquery\jquery.js	/^	function inspect( dataType ) {$/;"	f
+inspectPrefiltersOrTransports	static\xadmin\vendor\jquery\jquery.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+interpolationHandler	static\xadmin\vendor\jquery\jquery.js	/^function interpolationHandler( elem, name, isXML ) {$/;"	f
+isArraylike	static\xadmin\vendor\jquery\jquery.js	/^function isArraylike( obj ) {$/;"	f
+isHidden	static\xadmin\vendor\jquery\jquery.js	/^function isHidden( elem, el ) {$/;"	f
+isNative	static\xadmin\vendor\jquery\jquery.js	/^function isNative( fn ) {$/;"	f
+manipulationTarget	static\xadmin\vendor\jquery\jquery.js	/^function manipulationTarget( elem, content ) {$/;"	f
+markFunction	static\xadmin\vendor\jquery\jquery.js	/^function markFunction( fn ) {$/;"	f
+matcherFromGroupMatchers	static\xadmin\vendor\jquery\jquery.js	/^function matcherFromGroupMatchers( elementMatchers, setMatchers ) {$/;"	f
+matcherFromTokens	static\xadmin\vendor\jquery\jquery.js	/^function matcherFromTokens( tokens ) {$/;"	f
+multipleContexts	static\xadmin\vendor\jquery\jquery.js	/^function multipleContexts( selector, contexts, results ) {$/;"	f
+propFilter	static\xadmin\vendor\jquery\jquery.js	/^function propFilter( props, specialEasing ) {$/;"	f
+restoreScript	static\xadmin\vendor\jquery\jquery.js	/^function restoreScript( elem ) {$/;"	f
+returnFalse	static\xadmin\vendor\jquery\jquery.js	/^function returnFalse() {$/;"	f
+returnTrue	static\xadmin\vendor\jquery\jquery.js	/^function returnTrue() {$/;"	f
+safeActiveElement	static\xadmin\vendor\jquery\jquery.js	/^function safeActiveElement() {$/;"	f
+select	static\xadmin\vendor\jquery\jquery.js	/^function select( selector, context, results, seed ) {$/;"	f
+setFilters	static\xadmin\vendor\jquery\jquery.js	/^function setFilters() {}$/;"	f
+setGlobalEval	static\xadmin\vendor\jquery\jquery.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setMatcher	static\xadmin\vendor\jquery\jquery.js	/^function setMatcher( preFilter, selector, matcher, postFilter, postFinder, postSelector ) {$/;"	f
+setPositiveNumber	static\xadmin\vendor\jquery\jquery.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	static\xadmin\vendor\jquery\jquery.js	/^function showHide( elements, show ) {$/;"	f
+sibling	static\xadmin\vendor\jquery\jquery.js	/^function sibling( cur, dir ) {$/;"	f
+siblingCheck	static\xadmin\vendor\jquery\jquery.js	/^function siblingCheck( a, b ) {$/;"	f
+toSelector	static\xadmin\vendor\jquery\jquery.js	/^function toSelector( tokens ) {$/;"	f
+tokenize	static\xadmin\vendor\jquery\jquery.js	/^function tokenize( selector, parseOnly ) {$/;"	f
+vendorPropName	static\xadmin\vendor\jquery\jquery.js	/^function vendorPropName( style, name ) {$/;"	f
+winnow	static\xadmin\vendor\jquery\jquery.js	/^function winnow( elements, qualifier, not ) {$/;"	f
+_makeMaskCss	static\xadmin\vendor\select2\select2.js	/^            function _makeMaskCss() {$/;"	f
+ajax	static\xadmin\vendor\select2\select2.js	/^    function ajax(options) {$/;"	f
+checkFormatter	static\xadmin\vendor\select2\select2.js	/^    function checkFormatter(formatter, formatterName) {$/;"	f
+clazz	static\xadmin\vendor\select2\select2.js	/^    function clazz(SuperClass, methods) {$/;"	f
+countResults	static\xadmin\vendor\select2\select2.js	/^    function countResults(results) {$/;"	f
+debounce	static\xadmin\vendor\select2\select2.js	/^    function debounce(quietMillis, fn, ctx) {$/;"	f
+defaultTokenizer	static\xadmin\vendor\select2\select2.js	/^    function defaultTokenizer(input, selection, selectCallback, opts) {$/;"	f
+equal	static\xadmin\vendor\select2\select2.js	/^    function equal(a, b) {$/;"	f
+evaluate	static\xadmin\vendor\select2\select2.js	/^    function evaluate(val) {$/;"	f
+focus	static\xadmin\vendor\select2\select2.js	/^    function focus($el) {$/;"	f
+getSideBorderPadding	static\xadmin\vendor\select2\select2.js	/^    function getSideBorderPadding(element) {$/;"	f
+indexOf	static\xadmin\vendor\select2\select2.js	/^    function indexOf(value, array) {$/;"	f
+installDebouncedScroll	static\xadmin\vendor\select2\select2.js	/^    function installDebouncedScroll(threshold, element) {$/;"	f
+installFilteredMouseMove	static\xadmin\vendor\select2\select2.js	/^    function installFilteredMouseMove(element) {$/;"	f
+installKeyUpChangeEvent	static\xadmin\vendor\select2\select2.js	/^    function installKeyUpChangeEvent(element) {$/;"	f
+killEvent	static\xadmin\vendor\select2\select2.js	/^    function killEvent(event) {$/;"	f
+killEventImmediately	static\xadmin\vendor\select2\select2.js	/^    function killEventImmediately(event) {$/;"	f
+local	static\xadmin\vendor\select2\select2.js	/^    function local(options) {$/;"	f
+markMatch	static\xadmin\vendor\select2\select2.js	/^    function markMatch(text, term, markup, escapeMarkup) {$/;"	f
+measureTextWidth	static\xadmin\vendor\select2\select2.js	/^    function measureTextWidth(e) {$/;"	f
+postRender	static\xadmin\vendor\select2\select2.js	/^            function postRender() {$/;"	f
+render	static\xadmin\vendor\select2\select2.js	/^            function render(html) {$/;"	f
+resolveContainerWidth	static\xadmin\vendor\select2\select2.js	/^            function resolveContainerWidth() {$/;"	f
+splitVal	static\xadmin\vendor\select2\select2.js	/^    function splitVal(string, separator) {$/;"	f
+syncCssClasses	static\xadmin\vendor\select2\select2.js	/^    function syncCssClasses(dest, src, adapter) {$/;"	f
+tags	static\xadmin\vendor\select2\select2.js	/^    function tags(data) {$/;"	f
+thunk	static\xadmin\vendor\select2\select2.js	/^    function thunk(formula) {$/;"	f
+syncTaocan	synctaocan.sh	/^syncTaocan()$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

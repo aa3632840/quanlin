@@ -10,11 +10,20 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
+import os,sys
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+PROJECT_ROOT = os.path.join(
+    os.path.realpath(os.path.dirname(__file__)), os.pardir)
+
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,'mysite','templates'),
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_ROOT, "templates"),
 )
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -27,9 +36,12 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = '*'
 
 
+DATE_FORMAT = 'Y-m-d'
+DATETIME_FORMAT = 'Y-m-d H:i'
+TIME_FORMAT = 'H:i'
 # Application definition
 
 INSTALLED_APPS = (
@@ -39,11 +51,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'xadmin',
+    'crispy_forms',
     #'polls',
    # 'myapp',
      'quanlin',
+     # 'django_nose',
 )
-
+# TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,18 +76,30 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+
+DATABASES_SQLIT = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': os.path.join(PROJECT_ROOT, 'data.db'),                      # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
 #本地数据库
-# DATABASES = {
-#     'default': {
-#         'ENGINE':'django.db.backends.mysql',
-#         'NAME': 'quanlin',
-#         'USER': 'root',
-#         'PASSWORD': 'root',
-#         'HOST':'127.0.0.1'
-#     }
-# }
+DATABASES_LOCAL = {
+    'default': {
+        'ENGINE':'django.db.backends.mysql',
+        'NAME': 'quanlin3',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST':'127.0.0.1'
+    }
+}
 #阿里云 RDS
-DATABASES = {
+DATABASES_RDS = {
     'default': {
         'ENGINE':'django.db.backends.mysql',
         'NAME': 'quanlin',
@@ -81,23 +108,32 @@ DATABASES = {
         'HOST':'testkangwei.mysql.rds.aliyuncs.com'
     }
 }
+DATABASES = DATABASES_SQLIT
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'zh-cn'
-#LANGUAGE_CODE ='en-us'
+# LANGUAGE_CODE ='en-us'
 TIME_ZONE = 'Asia/Shanghai'
 #TIME_ZONE = 'UTC'
-
-
+STATIC_ROOT = 'static/'
+SITE_ID = 1
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = False
-
-
+MEDIA_ROOT = ''
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    #     'django.template.loaders.eggs.Loader',
+)
 STATIC_URL = '/static/'

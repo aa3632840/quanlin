@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+
+	 "settings" : {
+        // ...
+      	  "python_interpreter_path" : "C:\\Python27\\python.exe",
+
+	        "python_package_paths": [
+	            // "C:\\Python27\\Lib\\site-packages\\*", 
+
+	            ]
+    }
+}

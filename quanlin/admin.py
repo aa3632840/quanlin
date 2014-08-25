@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-  
 from django.contrib import admin
-from quanlin.models import Dingdan,Taocan, Danpin,TaocanDetail
+from quanlin.models import Dingdan,Taocan, Danpin
 
 class DingDanInline(admin.TabularInline ):
     model = Dingdan

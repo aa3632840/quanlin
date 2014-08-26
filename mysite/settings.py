@@ -108,7 +108,7 @@ DATABASES_RDS = {
         'HOST':'testkangwei.mysql.rds.aliyuncs.com'
     }
 }
-DATABASES = DATABASES_SQLIT
+DATABASES = DATABASES_LOCAL
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 

@@ -37,7 +37,7 @@ class Taocan(models.Model):
     guige = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'规格')
     danwei = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'单位')
     zhongliang = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'重量')
-    
+
     def addTaocanDetail(self,danpin=None,count=0):
         if danpin <> None and count >0 :
             tc_detail = TaocanDetail.objects.get_or_create(danpin=danpin,count=count)[0]

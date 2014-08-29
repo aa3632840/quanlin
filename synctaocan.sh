@@ -1,7 +1,2 @@
-python manage.py shell
+python manage.py syncdb
 
-
-
-
-from quanlin.models import * ;
-syncTaocan()

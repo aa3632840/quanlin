@@ -197,9 +197,8 @@ class Dingdan(DingdanPtr):
         pkg_pros = Taocan.objects.filter(tiaoma=self.tiaoxingma)
 
 
-
+        print self.tiaoxingma
         if pkg_pros.count() == 0 :
-            # print self.tiaoxingma
             single_product = Danpin.objects.get(tiaoma=self.tiaoxingma)
             order_detail = DingdanDetail()
             order_detail.initInfos( self,single_product.bianhao,self.dinghuo_shuliang,self.chanpin_chengjiaojine )

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-  
 import xadmin
 from xadmin import views
-from models import Dingdan,Taocan, Danpin,DingdanDetail
+from models import Dingdan,Taocan, Danpin,DingdanDetail,PackageDetail
 from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
 from xadmin.plugins.inline import Inline
 from xadmin.plugins.batch import BatchChangeAction
@@ -12,7 +12,7 @@ class DingdanAdmin(object):
     # list_filter = ['dianpumingcheng','kuaidi_gongsi_mingcheng','chulizhuangtai','fukuanzhuangtai','fahuozhuangtai']
     list_filter = ['fukuan_date','dianpumingcheng']
 
-    list_display = ( 'waibu_danhao', 'dianpumingcheng','kuaidi_gongsi_mingcheng','kuaidi_danhao',
+    list_display = ('id','waibu_danhao', 'dianpumingcheng','kuaidi_gongsi_mingcheng','kuaidi_danhao',
     	'fukuan_date','chanpin_bianhao',
         'dinghuo_shuliang', 'Orders_detail')
     # inlines = [DingDanInline]
@@ -21,7 +21,7 @@ class DingdanAdmin(object):
 
 class DingdanDetailAdmin(object):
 
-    list_filter = ['danpin_huohao','fukuan_date']
+    list_filter = ['danpin_huohao','fukuan_date','tiaoxingma']
 
     # excloud = 'dingdan'
     list_display = ('dianpumingcheng','waibu_danhao',
@@ -35,9 +35,29 @@ class DingdanDetailAdmin(object):
     search_fields = ['dingdan_bianhao','waibu_danhao','dianpumingcheng']
     # date_hierarchy = 'fukuan_date'
 
+class PackageDetailInline(object):
+    model = PackageDetail
+    extra = 1
+
+class TaocanAdmin(object):
+    search_fields = ['bianhao','tiaoma']
+    inlines = [PackageDetailInline]
+    pass
+
+class DanpinAdmin(object):
+    search_fields = ['bianhao','tiaoma']
+    pass
+
+class PackageDetailAdmin(object):
+    
+    pass
+
 
 xadmin.site.register(DingdanDetail, DingdanDetailAdmin)
 xadmin.site.register(Dingdan, DingdanAdmin)
+xadmin.site.register(Taocan, TaocanAdmin)
+xadmin.site.register(Danpin, DanpinAdmin)
+xadmin.site.register(PackageDetail, PackageDetailAdmin)
 
 
 

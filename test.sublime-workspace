@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"mm",
+				"m2m	ManyToManyField (m2m)"
+			],
+			[
+				"DEVICE_",
+				"DEVICE_HOST	statement"
+			],
+			[
+				"F",
+				"Female	statement"
+			],
+			[
+				"inline",
+				"inlines"
+			],
+			[
 				"dingdan",
 				"dingdan_bianhao	statement"
 			],
@@ -68,54 +84,19 @@
 	"buffers":
 	[
 		{
-			"file": "quanlin/adminx.py",
+			"file": "oa/adminx.py",
 			"settings":
 			{
-				"buffer_size": 1536,
+				"buffer_size": 499,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "# -*- coding: utf-8 -*-  \n\"\"\"\nDjango settings for mysite project.\n\nFor more information on this file, see\nhttps://docs.djangoproject.com/en/1.6/topics/settings/\n\nFor the full list of settings and their values, see\nhttps://docs.djangoproject.com/en/1.6/ref/settings/\n\"\"\"\n\n# Build paths inside the project like this: os.path.join(BASE_DIR, ...)\nimport os,sys\n\nreload(sys)\nsys.setdefaultencoding('utf-8')\nBASE_DIR = os.path.dirname(os.path.dirname(__file__))\n\nPROJECT_ROOT = os.path.join(\n    os.path.realpath(os.path.dirname(__file__)), os.pardir)\n\nTEMPLATE_DIRS = (\n    # Put strings here, like \"/home/html/django_templates\" or \"C:/www/django/templates\".\n    # Always use forward slashes, even on Windows.\n    # Don't forget to use absolute paths, not relative paths.\n    os.path.join(PROJECT_ROOT, \"templates\"),\n)\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/\n\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = '=ul@%az6pud#52n)7*0a*fi&%ol1c(ik)+j=6^k#e5b2+xi$n1'\n\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\n\nTEMPLATE_DEBUG = True\n\nALLOWED_HOSTS = '*'\n\n\nDATE_FORMAT = 'Y-m-d'\nDATETIME_FORMAT = 'Y-m-d H:i'\nTIME_FORMAT = 'H:i'\n# Application definition\n\nINSTALLED_APPS = (\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'xadmin',\n    'crispy_forms',\n    #'polls',\n   # 'myapp',\n     'quanlin',\n     # 'django_nose',\n)\n# TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'\nMIDDLEWARE_CLASSES = (\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n)\n\nROOT_URLCONF = 'mysite.urls'\n\nWSGI_APPLICATION = 'mysite.wsgi.application'\n\n\n# Database\n# https://docs.djangoproject.com/en/1.6/ref/settings/#databases\n\n\nDATABASES_SQLIT = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.\n        'NAME': os.path.join(PROJECT_ROOT, 'data.db'),                      # Or path to database file if using sqlite3.\n        'USER': '',                      # Not used with sqlite3.\n        'PASSWORD': '',                  # Not used with sqlite3.\n        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.\n        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.\n    }\n}\n\n#本地数据库\nDATABASES_LOCAL = {\n    'default': {\n        'ENGINE':'django.db.backends.mysql',\n        'NAME': 'quanlin3',\n        'USER': 'root',\n        'PASSWORD': 'root',\n            'HOST':'127.0.0.1'\n    }\n}\n#阿里云 RDS\nDATABASES_RDS = {\n    'default': {\n        'ENGINE':'django.db.backends.mysql',\n        'NAME': 'quanlin',\n        'USER': 'kangwei',\n        'PASSWORD': '3632840aa',\n        'HOST':'testkangwei.mysql.rds.aliyuncs.com'\n    }\n}\nDATABASES = DATABASES_RDS\n# Internationalization\n# https://docs.djangoproject.com/en/1.6/topics/i18n/\n\nLANGUAGE_CODE = 'zh-cn'\n# LANGUAGE_CODE ='en-us'\nTIME_ZONE = 'Asia/Shanghai'\n#TIME_ZONE = 'UTC'\nSTATIC_ROOT = 'static/'\nSITE_ID = 1\nUSE_I18N = True\n\nUSE_L10N = True\n\nUSE_TZ = False\nMEDIA_ROOT = ''\nSTATICFILES_FINDERS = (\n    'django.contrib.staticfiles.finders.FileSystemFinder',\n    'django.contrib.staticfiles.finders.AppDirectoriesFinder',\n    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',\n)\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/1.6/howto/static-files/\nTEMPLATE_LOADERS = (\n    'django.template.loaders.filesystem.Loader',\n    'django.template.loaders.app_directories.Loader',\n    #     'django.template.loaders.eggs.Loader',\n)\nSTATIC_URL = '/static/'\n",
-			"file": "mysite/settings.py",
-			"file_size": 4068,
-			"file_write_time": 130535243664657768,
+			"file": "oa/models.py",
 			"settings":
 			{
-				"buffer_size": 4056,
+				"buffer_size": 1413,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/D/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 674,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "quanlin/models.py",
-			"settings":
-			{
-				"buffer_size": 14325,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/likang/Desktop/nginx.conf",
-			"settings":
-			{
-				"buffer_size": 2015,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n为有效使用及管理计算机软件资源,并确保公司计算机软件之合法使用避免人员因使用非法软件，致触犯著作权法、智能财产权，影响公司声誉或造成计算机病毒侵害，影响日常工作之进行，故制定本办法。\n第二节  适用范围\n本办法适用于本公司软件使用之相关信息作业管理。\n第三节  作业办法\n3.1 权责单位:人力资源中心\n3.1.1 人力资源中心负责各部门所使用之原始合法软件保管行政管理部负责安装。\n3.1.2 为确保公司计算机软件的合法使用，各子集团及部门对该部门的每台计算机应指定保管人，共享计算机则由子集团及部门指定人员保管，保管人对计算机软、硬件具有使用、保管及合法软件使用之责。\n3.1.3 各部门应指派专人管理监督该部门软件使用及授权情形，并负责软件异动等事项。以确保该部门软件的合法使用，若发现使用的计算机存在来历不明的软件，则应移除或连络行政部协助移除。\n3.2 软件增置之方式如下 \n购置\n委托开发\n授权使用\n随硬设备附赠\n赠与。\n3.3 计算机软件的采购与接受赠予,取得资料如下\n3.3.1采购与接受赠与的软件应有合法的版权授予，若授权书应取得版权所有人或赠予单位的可资证明版权来源的文件或签证。\n3.3.2软件的采购应依据正常请购等手续，并于取得软件及授权证明后，统一交由人力资源部管理人员登录经造册查验无误后，只得依据该授权数量安装于公司计算机内使用。\n3.4 计算机软件安装及保管\n3.4.1公司各类计算机软件，应以具著作版权者为限，并统一由人力资源中心负责安装保管，并每年至少进行一次盘点。各子集团及部门因业务需要需使用时可提出申请，由人力资源部依该软件的授权使用范围进行安装。\n3.4.2严禁个人私自于公司计算机安装未获授权、非授权公司使用或超过使用授权数量的软件。未经授权或同意,使用者不得私自于计算机内安装任何软件或信息；经授权同意者只得于计算机内安装合法授权软件或信息。\n3.4.3公司拥有的相关计算机软件，若有人员要安装则必须先提出,申请并经部门主管同意后,方得依授权数量安装，未取得授权部份由该申请部门编列预算处理。人力资源中心管理人员则依据申请部门提出的申请内容，安装至各计算机之内。\n3.4.4软件保管人对软件负保管之责，软件之使用者如有使用不当，造成毁损或遗失，应负赔偿责任。\n3.4.5各部门软件分配使用后，保管人或使用人职务变动或离职时，应移交其保管或使用的软硬件，并办理交接。\n3.4.6各部门增购的软件，于购入后需将正版软件交由人力资源中心,由人力资源中心记录变更内容，为软件做增加变动登记。 \n3.5 软件使用之权利及义务\n3.5.1禁止员工使用会干扰或破坏网络上其它使用者或节点的软、硬件系统，此种干扰与破坏如散布计算机病毒、尝试侵入未经授权之计算机系统、或其它类似之情形者皆在禁止范围内。\n3.5.2网络上存取到的任何资源，若其拥有属个人或非公司所有，除非已正式开放或已获授权使用，否则禁止滥用或复制使用此等资源。\n3.5.3公司员工使用计算机与网络相关资源应规范处理，并尊重知识财产权，不使用任何非法软件包于计算机系统内，不利用公司计算机从事任何违规或违法行为；并遵守公司规范。\n3.5.4 禁止员工使用非法软件,或私人拥有的计算机软件安装使用于公司计算机上或将私人计算机带至公司，也不得将公司合法软件私自拷贝、借于他人或私自将软、硬件带回家中，如因此触犯著作权者，则该员应负刑事及民事之全部责任。\n3.5.5为确保公司计算机软件的合法使用，各子集团及部门对使用的计算机应指定保管人，以负责管理该设备所使用的软件，若发现使用的计算机存在来历不明的软件，应连络人力资源中心协助处理。\n3.5.6 软件保管人或使用人，对于保管或使用的软件不可盗卖、循私营利或其它不法情事,违者除提报主管及依公司规定惩处外, 如因此触犯著作权者，则该员应负刑事及民事全部责任。\n3.5.7尊重知识财产权,于公司内务必使用合法软件，而由网络上所存取的任何资源，限其个人使用，并禁止下载有版权的音乐、影片及非法软件。\n3.6 软件稽查\n为使软件在计算机中发挥应有效用，并避免非法软件流入公司，人力资源中心可定期或不定期稽查，并依据下列原则办理\n3.6.1 由人力资源中心人员定期或不定期检视计算机内相关软件或信息。\n3.6.2 为确保公司计算机软件的合法使用，人力资源中心可不定期检查公司各子集团及部门所使用的软件是否合法，如发现使用非法计算机软件者，除提报与主管外，并追究责任。 \n3.7 软件借用\n3.7.1软件文件及计算机硬件外围借用需提前向人力资源中心和部门相关领导提出申请。借用的软件，仅能在公司内原已合法使用之计算机上使用。\n3.7.2 使用者借用的软件严禁自行拷贝留存或违反智能财产权相关规定之行为，若触犯法律者应负刑事及民事全部责任。\n3.7.3 借用软件于使用后应归还公司，并将安装于私有计算机内相关软件予以删除，不得留存备份。\n3.7.4 借用的软件若有遗失或不正常使用导致损坏，无法正常使用，借用人应负赔偿之责。(正常使用损坏不在此限，但须交回原借用之光盘或磁盘)。\n3.7.5 人力资源中心对于购入的合法软件由人力资源中心网管人员保管。\n3.7.6 借用或归还软件，须直接通过软件管理人员，不可私自转借，并不得委任借还。\n3.8 软件采购\n3.8.1 各子集团及部门之软件管理者对该子集团及部门使用中的软件，应视需要查核实际使用状况，以作为软件增置与编列预算的参考。\n3.8.2 使用子集团及部门在做软件请购时应考量软件用途、授权形式及价格以评估软件需求。  \n3.8.3 软件采购原则如下\nA.相同的软件集中采购。\nB.使用者多的软件，采用网络版或授权使用方式。  \n第四节  相关管理\n4.1人员管理\n公司应对机构实行定岗、定编、定责，明确各岗位的人员素质要求。\n应建立重要岗位的双人负责制，并加强对单人单岗的监控。\n应建立完善的保密制度，重要岗位应签订保密协议书。\n不应录用有犯罪或严重违规行为记录的人员从事公司信息技术工作。\n4.2安全管理\n应建立计算机病毒防范制度： \n统一组织和实施计算机病毒防范工作\n建立计算机病毒预警机制，严格执行病毒检测及报告措施。\n4.3数据\n4.3.1  数据管理\n数据是指公司在经营和管理中产生的信息资源，主要包括业务数据、系统数据和管理数据等。\n应建立数据管理制度，达到以下基本要求：\n重要数据分密级管理；\n建立数据访问控制机制；\n建立数据防篡改和防窃取机制；\n建立数据备份措施和异地存放措施。\n业务数据的管理应达到以下要求： \n对业务数据实施严格的安全保密管理；\n在线系统所保存的业务数据不少于一年；\n建立业务数据的离线备份制度，数据应定期、完整、准确地转储到可靠的介质上，并要求实现集中、异地存放，保存期限至少10年；\n备份数据不得更改，并定期进行完整性和可恢复性校验；\n备份数据指定专人负责保管，严格执行数据交接管理规定和登记管理规定。\n系统数据应以电子文档和书面文档两种形式加以保存，并实行专人管理。\n公司应统一内部数据标准，并遵循行业数据标准。\n4.3.2  数据安全\n公司应充分利用成熟的安全技术确保数据的保密性、完整性、可用性和可控性。",
-			"settings":
-			{
-				"buffer_size": 2991,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -126,12 +107,36 @@
 		"selected_items":
 		[
 			[
-				"git ",
-				"Git: Commit"
+				"pcd",
+				"Package Control: Disable Package→禁用程序包"
+			],
+			[
+				"setpy",
+				"Set Syntax: Python"
 			],
 			[
 				"pcl",
 				"Package Control: List Packages→列出程序包"
+			],
+			[
+				"pce",
+				"Package Control: Enable Package→启用程序包"
+			],
+			[
+				"pke",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"se pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"set pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"git ",
+				"Git: Commit"
 			],
 			[
 				"install",
@@ -238,7 +243,7 @@
 				"Package Control: Remove Package→删除程序包"
 			]
 		],
-		"width": 406.0
+		"width": 618.0
 	},
 	"console":
 	{
@@ -258,23 +263,61 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/code/python/git/quanlin"
+	],
 	"file_history":
 	[
+		"/D/code/python/git/quanlin/quanlin/models.py",
+		"/D/code/python/git/quanlin/quanlin/adminx.py",
+		"/D/code/python/git/quanlin/oa/models.py",
+		"/D/code/python/git/quanlin/oa/migrations/0001_initial.py",
+		"/D/code/python/git/quanlin/static/xadmin/css/xadmin.form.css",
+		"/D/code/python/git/quanlin/django_uwsgi.py",
+		"/C/Users/likang/test.py",
+		"/D/code/python/git/quanlin/manage.py",
+		"/D/code/python/git/quanlin/oa/admin.py",
+		"/D/code/python/git/quanlin/all0826.data",
+		"/D/code/python/git/quanlin/southtut/models.py",
+		"/D/code/python/git/quanlin/oa/adminx.py",
+		"/D/code/python/git/quanlin/quanlin/admin.py",
+		"/D/code/python/git/quanlin/mysite/urls.py",
+		"/D/code/python/git/quanlin/mysite/settings.py.bak",
+		"/D/code/python/git/quanlin/mysite/settings.py",
+		"/D/code/python/git/quanlin/.tags",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/select2/select2_locale_es.js",
+		"/C/Python27/lib/site-packages/django/db/models/fields/__init__.py",
+		"/D/code/python/git/quanlin/build/list/pip-egg-info/List.egg-info/SOURCES.txt",
+		"/D/code/python/git/quanlin/test.sublime-project",
+		"/D/code/python/git/quanlin/build/pip-delete-this-directory.txt",
+		"/D/code/python/git/quanlin/build/list/PKG-INFO",
+		"/D/Sublime Text 3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/code/python/git/quanlin/quanlin/migrations/0002_auto__add_field_danpin_purchase_price2.py",
+		"/D/code/python/git/quanlin/quanlin/templates/quanlin/index.html",
+		"/D/code/python/git/quanlin/static/admin/js/inlines.js",
+		"/D/code/python/git/quanlin/static/xadmin/css/xadmin.widget.select-transfer.css",
+		"/D/code/python/git/quanlin/static/xadmin/js/xadmin.plugin.sortable.js",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/select2/select2_locale_de.js",
+		"/C/Users/likang/Desktop/source.list",
+		"/C/Users/likang/Desktop/sudo pip install tox",
+		"/C/Users/likang/Desktop/README",
+		"/D/code/python/git/quanlin/showsql.sh",
+		"/D/code/python/git/quanlin/synctaocan.bat",
+		"/D/code/python/git/quanlin/synctaocan.sh",
+		"/D/code/python/git/quanlin/test.py",
+		"/D/code/python/git/quanlin/test.sh",
+		"/D/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/likang/Desktop/nginx.conf",
 		"/C/Users/likang/Desktop/李康炜/行政/1 行文规范管理制度.doc",
 		"/C/Users/likang/Desktop/django插件.xls",
 		"/C/Users/likang/Desktop/李康炜/行政/网络科技公司需规范制度.xlsx",
-		"/D/code/python/git/quanlin/showsql.sh",
-		"/D/code/python/git/quanlin/build/list/pip-egg-info/List.egg-info/SOURCES.txt",
-		"/D/code/python/git/quanlin/static/xadmin/vendor/select2/select2_locale_de.js",
 		"/D/code/python/git/quanlin/static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js",
-		"/D/code/python/git/quanlin/quanlin/models.py",
 		"/D/code/python/git/quanlin/更新所有单品进价.sql",
 		"/D/code/python/git/quanlin/static/xadmin/vendor/flot/excanvas.js",
 		"/D/code/python/git/quanlin/static/xadmin/vendor/font-awesome/css/font-awesome.css",
 		"/D/code/python/git/quanlin/static/admin/js/actions.js",
-		"/D/code/python/git/quanlin/mysite/settings.py",
 		"/D/code/python/git/quanlin/quanlin/tests.py",
-		"/D/code/python/git/quanlin/test.sublime-project",
 		"/C/Users/likang/pip/pip.log",
 		"/C/Users/likang/Desktop/编辑1",
 		"/C/Users/likang/Desktop/test",
@@ -284,9 +327,7 @@
 		"/C/Users/likang/Desktop/mysite/test.sublime-project",
 		"/D/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
 		"/D/Sublime Text 3/Data/Packages/User/JSON.sublime-settings",
-		"/D/Sublime Text 3/Data/Packages/Default/Default (Windows).sublime-keymap",
 		"/D/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
-		"/D/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
 		"/D/Sublime Text 3/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
 		"/C/Users/likang/Desktop/mysite/quanlin/adminx.py",
 		"/C/Users/likang/Desktop/code/192.168.0.128myse.pro.sublime-project",
@@ -355,39 +396,7 @@
 		"//192.168.40.128/share/webpy/todolist/model.py",
 		"//192.168.40.128/share/webpy/todolist/web/db.py",
 		"//192.168.40.128/share/webpy/todolist/web/test.py",
-		"//192.168.40.128/share/webpy/todolist/web/webapi.py",
-		"//192.168.40.128/share/webpy/todolist/web/debugerror.py",
-		"//192.168.40.128/share/webpy/todolist/todo.py",
-		"//192.168.40.128/share/webpy/todolist/templates/index.html",
-		"//192.168.40.128/share/webpy/todolist/web/webopenid.py",
-		"/d/Sublime Text 3/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/d/Sublime Text 3/Data/Packages/User/SublimeCodeIntel.sublime-settings",
-		"/E/software/开发类/框架/企业WIKI/TWiki-6.0.0.tgz",
-		"/C/Users/likang/Desktop/twiki.conf",
-		"/C/Users/likang/Desktop/test4.c",
-		"/C/Users/likang/Desktop/test2.c",
-		"/C/Users/likang/Desktop/test.c",
-		"/C/Users/likang/Desktop/test3.c",
-		"/C/Users/likang/Desktop/baidu.c",
-		"/C/Users/likang/Desktop/test4.txt",
-		"/D/Sublime Text 3/sublime_text.exe",
-		"/C/Users/likang/Desktop/Untitled1.c",
-		"/C/Users/likang/Desktop/heapsort.py",
-		"/C/Users/likang/Desktop/heapsort2.py",
-		"/C/Users/likang/Desktop/信息处.txt",
-		"/D/BaiduYunDownload/x/82b202184e6245c7fe285e6bb4a374f75f1306b0.torrent",
-		"/C/Users/likang/Downloads/709b274ccd5e1eda223b9314f6e574f1801b8565.torrent",
-		"/C/Users/likang/Desktop/download.php",
-		"/C/Users/likang/Desktop/apache2.conf",
-		"//192.168.40.128/share/www/logreport/show/usage_201404.html",
-		"//192.168.40.128/share/www/.tags",
-		"//192.168.40.128/share/www/CheckUser.php",
-		"//192.168.40.128/share/www/inc/adminfunctions.php",
-		"//192.168.40.128/share/www/inc/gpconn.php",
-		"//192.168.40.128/share/www/old/@@Qln@1@l1l@.Il1lsl/config.php",
-		"//192.168.40.128/share/www/inc/mysql.php",
-		"//192.168.40.128/share/www/inc/checkcode.php",
-		"//192.168.40.128/share/www/article.php"
+		"//192.168.40.128/share/webpy/todolist/web/webapi.py"
 	],
 	"find":
 	{
@@ -398,6 +407,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"D:\\code\\python\\git\\quanlin",
 			"\\\\192.168.0.128\\share\\django\\mysite",
 			"\\\\10.1.11.130\\share\\django\\xadmin\\demo_app",
 			"\\\\10.1.11.130\\share\\django\\mysite",
@@ -416,6 +426,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"True",
+			"blank",
+			"Gender_Choices",
+			"xadmin.autodiscover()",
+			"auto",
+			"quanlin",
+			"    ",
+			"Gender_Choices",
+			"Female",
+			"进价",
+			"  ",
+			"install",
 			"tid",
 			"resultNum",
 			"storage_id",
@@ -531,19 +553,7 @@
 			"Dingdans",
 			"managed = False",
 			"    id = models.IntegerField(blank=True, null=True)",
-			"date",
-			"int",
-			"chanpin",
-			"poll",
-			"Poll",
-			"order",
-			"from django.core.urlresolvers import reverse",
-			"CST",
-			"USE_TZ",
-			"USE_TZ ",
-			"UTC",
-			"TIME_ZONE",
-			"No polls are available."
+			"date"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -581,24 +591,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "quanlin/adminx.py",
+					"file": "oa/adminx.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1536,
+						"buffer_size": 499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1174,
-								1174
+								304,
+								316
 							]
 						],
 						"settings":
@@ -606,603 +616,51 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "cp936",
-							"function_name_status_row": 29,
-							"origin_encoding": "ASCII",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4485.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "mysite/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4056,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3012,
-								3012
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "UTF-8",
-							"function_name_status_row": 100,
-							"origin_encoding": "UTF-8",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 19971.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 674,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "UTF-8",
-							"function_name_status_row": 8,
-							"origin_encoding": "ASCII",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "quanlin/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1212,44 +670,8 @@
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default_content"
 							],
-							"clone_numbers": 1,
 							"codeintel": true,
 							"codeintel_config":
 							{
@@ -1353,435 +775,38 @@
 								"Python Django": "Python"
 							},
 							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "UTF-8",
-							"function_name_status_row": 0,
-							"history_list_is_closing": true,
-							"origin_encoding": "UTF-8",
+							"function_name_status_row": 14,
 							"sublime_auto_complete": true,
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "quanlin/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14325,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6433,
-								6456
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"clone_numbers": 1,
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "UTF-8",
-							"function_name_status_row": 142,
-							"history_list_is_closing": true,
-							"origin_encoding": "UTF-8",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 620.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/likang/Desktop/nginx.conf",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2015,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								150,
-								150
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "UTF-8",
-							"function_name_status_row": 13,
-							"origin_encoding": "ASCII",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 1,
+					"file": "oa/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2991,
+						"buffer_size": 1413,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								71,
-								71
+								1172,
+								1172
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_name": "",
 							"bh_regions":
 							[
 								"bh_curly",
@@ -1789,11 +814,46 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -1803,42 +863,7 @@
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default_content"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -1943,23 +968,19 @@
 								"Python Django": "Python"
 							},
 							"codeintel_tooltips": "popup",
-							"encoding_helper_encoding": "",
-							"function_name_status_row": 1,
+							"function_name_status_row": 46,
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -1980,18 +1001,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -2029,6 +1043,18 @@
 		"selected_items":
 		[
 			[
+				"models",
+				"oa\\models.py"
+			],
+			[
+				"adminx",
+				"quanlin\\adminx.py"
+			],
+			[
+				"settings",
+				"mysite\\settings.py"
+			],
+			[
 				"",
 				"quanlin\\models.py"
 			],
@@ -2059,6 +1085,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},

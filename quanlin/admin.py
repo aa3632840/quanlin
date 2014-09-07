@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-  
 from django.contrib import admin
+from django import forms
 from quanlin.models import Dingdan,Taocan, Danpin
 
 class DingDanInline(admin.TabularInline ):
@@ -9,13 +10,20 @@ class DingDanInline(admin.TabularInline ):
 class TaocanDetailAdmin(admin.ModelAdmin):
     pass
 
+class DanpinForm(forms.ModelForm):
+
+    class Meta :
+        model = Danpin
+        exclude = ['f5']
+
 class TaocanAdmin(admin.ModelAdmin):
     # inlines = [
     #     Danpin,
     # ]
     pass
 class DanpinAdmin(admin.ModelAdmin):
-    pass
+    form = DanpinForm
+    prepopulated_fields = {"bianhao": ("bianhao","pinming")}
 
 class DingDanAdmin(admin.ModelAdmin):
 

@@ -52,13 +52,19 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
+    'django_cron',
+    'cron',
     'xadmin',
     'crispy_forms',
-    #'polls',
-   # 'myapp',
+    'southtut',
      'quanlin',
-     # 'django_nose',
+     'oa',
+
 )
+
+
+
 # TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -68,6 +74,13 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+CRON_CLASSES = [
+    "cron.test_shell.MyCronJob",
+    "django_cron.cron.FailedRunsNotificationCronJob",
+    
+]
+FAILED_RUNS_CRONJOB_EMAIL_PREFIX = "[Server check]: "
 
 ROOT_URLCONF = 'mysite.urls'
 

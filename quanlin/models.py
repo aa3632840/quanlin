@@ -11,9 +11,9 @@ class Danpin(models.Model):
     f5                   = models.CharField(db_column='F5', max_length=255, blank=True,null=True,verbose_name=u'') 
     tiaoma           = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'条码')
     guige             = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'规格')
-    danwei          = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'单位')
+    danwei          = models.CharField(max_length=20, blank=True,null=True,verbose_name=u'单位')
     zhongliang    = models.FloatField( verbose_name=u'重量')
-    purchase_price    = models.FloatField( verbose_name=u'重量')
+    purchase_price    = models.FloatField( verbose_name=u'进价')
 
 
 
@@ -152,6 +152,10 @@ class DingdanPtr(models.Model):
     tiaoxingma                         = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'条码')
     waibu_danhao                   = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'外部单号')
     wangdian_pinming            = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'网店品名')
+    in_pocke_post_fee            = models.FloatField(blank=True,null=True,verbose_name=u'实收快递费')
+    out_pocke_post_fee          = models.FloatField(blank=True,null=True,verbose_name=u'实付快递费')
+
+
     class Meta:
         abstract = True
 

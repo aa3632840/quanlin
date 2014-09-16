@@ -4,7 +4,7 @@
   <master>true</master>  
   <plugins>python</plugins>
   <pidfile>./uwsgi.pid</pidfile>  
-  <processes>2</processes>  
+  <processes>1</processes>  
   <module>django_uwsgi</module>  
   <pythonpath>/alidata/www/quanlin</pythonpath>   
   <profiler>true</profiler>  

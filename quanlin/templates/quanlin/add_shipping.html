@@ -1,0 +1,64 @@
+{% if shipping_list  or exist_shipping_list or unbound_tid_shippings or inavalide_shipping_lines%}
+    <ul>
+
+    
+
+
+    <form class="form-horizontal"> <fieldset> <div class="control-group"><label class="control-label leipiplugins-orgname">新数据，直接插入</label>
+
+    {% for shipping in shipping_list %}
+        <div class="controls leipiplugins-orgvalue"><label class="checkbox ">
+        <input type="checkbox" name="leipiNewField" title="复选框" value="选项1" orginline="" class="leipiplugins" leipiplugins="checkbox">{{ shipping.out_sid }}   {{ shipping.tid }}   {{ shipping.company_name }} 
+        </label></div>
+    {% endfor %}
+    </fieldset>
+    </form>
+    
+    </ul>
+    <ul>
+
+    
+
+
+    <form class="form-horizontal"> <fieldset> <div class="control-group"><label class="control-label leipiplugins-orgname">已存在的订单，无需改变</label>
+
+    {% for shipping in exist_shipping_list %}
+        <div class="controls leipiplugins-orgvalue"><label class="checkbox ">
+        <input type="checkbox" name="leipiNewField" title="复选框" value="选项1" orginline="" class="leipiplugins" leipiplugins="checkbox">{{ shipping.out_sid }}   {{ shipping.tid }}   {{ shipping.company_name }} 
+        </label></div>
+    {% endfor %}
+    </fieldset>
+    </form>
+    
+    </ul>
+    <ul>
+
+    
+
+
+    <form class="form-horizontal"> <fieldset> <div class="control-group"><label class="control-label leipiplugins-orgname">未绑定，但需绑定tid的快递</label>
+
+    {% for shipping in unbound_tid_shippings %}
+        <div class="controls leipiplugins-orgvalue"><label class="checkbox ">
+        <input type="checkbox" name="leipiNewField" title="复选框" value="选项1" orginline="" class="leipiplugins" leipiplugins="checkbox">{{ shipping.out_sid }}   {{ shipping.tid }}   {{ shipping.company_name }} 
+        </label></div>
+    {% endfor %}
+    </fieldset>
+    </form>
+
+    <form class="form-horizontal"> <fieldset> <div class="control-group"><label class="control-label leipiplugins-orgname">无效数据</label>
+
+    {% for inavalide_shipping_line in inavalide_shipping_lines %}
+        <div class="controls leipiplugins-orgvalue"><label class="checkbox ">
+        <input type="checkbox" name="leipiNewField" title="复选框" value="选项1" orginline="" class="leipiplugins" leipiplugins="checkbox">{{ inavalide_shipping_line }} 
+        </label></div>
+    {% endfor %}
+    </fieldset>
+    </form>
+
+    
+    </ul>        
+{% else %}
+    <p>请输入有效数据.</p>
+{% endif %}
+

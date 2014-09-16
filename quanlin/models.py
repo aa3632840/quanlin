@@ -1,10 +1,195 @@
-# -*- coding: utf-8 -*-  
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.utils.html import format_html
 from django.db import models
 
-#单品
+TRADE_NO_CREATE_PAY = 'TRADE_NO_CREATE_PAY'
+WAIT_BUYER_PAY = 'WAIT_BUYER_PAY'
+SELLER_CONSIGNED_PART = 'SELLER_CONSIGNED_PART'
+WAIT_SELLER_SEND_GOODS = 'WAIT_SELLER_SEND_GOODS'
+WAIT_BUYER_CONFIRM_GOODS = 'WAIT_BUYER_CONFIRM_GOODS'
+TRADE_BUYER_SIGNED = 'TRADE_BUYER_SIGNED'
+TRADE_FINISHED = 'TRADE_FINISHED'
+TRADE_CLOSED = 'TRADE_CLOSED'
+TRADE_CLOSED_BY_TAOBAO = 'TRADE_CLOSED_BY_TAOBAO'
+PAY_PENDING = 'PAY_PENDING'
+WAIT_PRE_AUTH_CONFIRM = 'WAIT_PRE_AUTH_CONFIRM'
+
+
+STATUS_CHOICES = (
+        (TRADE_NO_CREATE_PAY, '没有创建支付宝交易'),
+        (WAIT_BUYER_PAY,'等待买家付款'),
+        (SELLER_CONSIGNED_PART,'卖家部分发货'),
+        (WAIT_SELLER_SEND_GOODS,'买家已付款，等待发货'),
+        (WAIT_BUYER_CONFIRM_GOODS,'等待买家确认收货'),
+        (TRADE_BUYER_SIGNED,'买家已签收,货到付款专用'),
+        (TRADE_FINISHED,'交易成功'),
+        (TRADE_CLOSED,'交易关闭'),
+        (TRADE_CLOSED_BY_TAOBAO,'交易被淘宝关闭'),
+        (PAY_PENDING,'国际信用卡支付付款确认中'),
+        (WAIT_PRE_AUTH_CONFIRM,'0元购合约中'),
+     )
+class TradeParent(models.Model):
+    """订单父类"""
+
+
+    GUARANTEE_TRADE = 'GUARANTEE_TRADE' #一口价、拍卖
+    AUTO_DELIVERY = 'AUTO_DELIVERY' #自动发货
+    EC = 'EC' # 直冲
+    COD = 'COD' #货到付款
+    STEP = 'STEP' #万人团
+
+    SHOP_TM = "天猫"
+    SHOP_YHD = "一号店"
+    SHOP_JD = "京东"
+    SHOP_JH = "建行善融"
+    SHOP_RYG = "工行融E购"
+
+    SHOP_CHOICES = (
+        (SHOP_TM,SHOP_TM),
+        (SHOP_YHD,SHOP_YHD),
+        (SHOP_JD,SHOP_JD),
+        (SHOP_JH,SHOP_JH),
+        (SHOP_RYG,SHOP_RYG),
+
+        )
+    TYPE_CHOICES = (
+        (GUARANTEE_TRADE,'一口价、拍卖'),
+        (AUTO_DELIVERY,'自动发货'),
+        (EC,'直冲'),
+        (COD,'货到付款'),
+        (STEP,'万人团'),
+        )
+
+    tid = models.CharField('交易编号 父订单的交易编号',blank=True,null=True,max_length=50)
+    seller_nick = models.CharField('卖家昵称', max_length=50)
+    payment = models.FloatField('实付金额',blank=True,null=True,default=0)
+    out_post_fee = models.FloatField('实付邮费',blank=True,null=True,default=0)
+    post_fee = models.FloatField('实收邮费',blank=True,null=True,default=0)
+    receiver_name = models.CharField('收货人的姓名',blank=True,null=True, max_length=50)
+    receiver_state = models.CharField('收货人的所在省份',blank=True,null=True, max_length=50)
+    receiver_address = models.CharField('收货人的详细地址',blank=True,null=True, max_length=250)
+    receiver_zip = models.CharField('收货人的邮编',blank=True,null=True, max_length=50)
+    receiver_mobile =   models.CharField('收货人的手机号码',blank=True,null=True, max_length=50)
+    receiver_phone =   models.CharField('收货人的电话号码',blank=True,null=True, max_length=50)
+    received_payment = models.FloatField('卖家实际收到的支付宝打款金额',blank=True,null=True)
+    status = models.CharField('交易状态',blank=True,null=True, max_length=50,choices=STATUS_CHOICES)
+    shop = models.CharField('店铺',blank=True,null=True, max_length=50,choices=SHOP_CHOICES)
+    title = models.CharField('交易标题',blank=True,null=True, max_length=50)
+    trade_type = models.CharField('交易类型',blank=True,null=True, max_length=50,choices=TYPE_CHOICES)
+    price = models.FloatField('商品价格',blank=True,null=True,default=0)
+    discount_fee = models.FloatField('系统优惠金额',blank=True,null=True,default=0)
+    total_fee = models.CharField('商品金额',blank=True,null=True, max_length=50)
+    alipay_no = models.CharField('支付宝交易号',blank=True,null=True, max_length=50)
+    buyer_nick  = models.CharField('买家昵称',blank=True,null=True, max_length=50)
+    buyer_area  = models.CharField('买家下单的地区',blank=True,null=True, max_length=50)
+    yfx_fee = models.CharField('订单的运费险，单位为元',blank=True,null=True, max_length=50)
+    yfx_id  = models.CharField('运费险支付号',blank=True,null=True, max_length=50)
+    yfx_type  = models.CharField('运费险类型',blank=True,null=True, max_length=50)
+    step_paid_fee = models.CharField('分阶段付款的已付金额（万人团订单已付金额)',blank=True,null=True, max_length=50)
+    mark_desc = models.CharField('订单出现异常问题的时候，给予用户的描述,没有异常的时候，此值为空',blank=True,null=True, max_length=50)
+    send_time = models.CharField('订单将在此时间前发出，主要用于预售订单',blank=True,null=True, max_length=50)
+    shipping_type = models.CharField('创建交易时的物流方式',blank=True,null=True, max_length=50)
+    adjust_fee  = models.CharField('卖家手工调整金额',blank=True,null=True, max_length=50)
+    cod_fee = models.CharField('货到付款服务费',blank=True,null=True, max_length=50)
+    trade_from  = models.CharField('交易内部来源',blank=True,null=True, max_length=50)
+    cod_status  = models.CharField('货到付款物流状态',blank=True,null=True, max_length=50)
+    commission_fee  = models.CharField('交易佣金',blank=True,null=True, max_length=50)
+    receiver_city = models.CharField('收货人所在城市',blank=True,null=True, max_length=50)
+    receiver_district = models.CharField('收货人所在地区',blank=True,null=True, max_length=50)
+    
+    num = models.IntegerField('商品购买数量',blank=True,null=True,default=0)
+    # num_iid = models.IntegerField('商品数字编号',blank=True,null=True, max_length=50)
+    point_fee = models.IntegerField('买家使用积分',blank=True,null=True,default=0, max_length=50)
+    alipay_id = models.CharField('买家的支付宝id号',blank=True,null=True,default=0, max_length=50)
+    buyer_obtain_point_fee  = models.IntegerField('买家获得积分',blank=True,null=True,default=0)
+    real_point_fee  = models.IntegerField('买家实际使用积分',blank=True,null=True,default=0)
+    consign_time  = models.DateTimeField('卖家发货时间',blank=True,null=True)
+    created = models.DateTimeField('交易创建时间',blank=True,null=True)
+    pay_time  = models.DateTimeField('付款时间',blank=True,null=True)
+    modified  = models.DateTimeField('交易修改时间',blank=True,null=True)
+    end_time  = models.DateTimeField('交易结束时间',blank=True,null=True)
+    async_modified  = models.DateTimeField('同步到卖家库的时间',blank=True,null=True)
+    is_part_consign = models.CharField('是否是多次发货的订单',blank=True,null=True, max_length=50)
+
+    def  __cmp__(self,obj):
+        if self.modified and obj.modified:
+            cmp_result = cmp(str(self.modified),str(obj.modified))
+            # print 'compare',str(self.modified),str(obj.modified),cmp_result
+            return cmp_result
+        else:
+            return -1
+
+    def __unicode__(self):
+        return u'主订单%s' %self.tid
+
+    class Meta:
+        verbose_name = u"主订单"
+        verbose_name_plural = u"主订单"
+
+class Shipping(models.Model):
+    """物流"""
+    buyer_nick= models.CharField('买家昵称',blank=True,null=True,max_length=100)
+    address= models.CharField('买家地址',blank=True,null=True,max_length=100)
+    city= models.CharField('收货市',blank=True,null=True,max_length=100)
+    district= models.CharField('收货区',blank=True,null=True,max_length=100)
+    state= models.CharField('收货省',blank=True,null=True,max_length=100)
+    receiver_mobile= models.CharField('收货人手机号',blank=True,null=True,max_length=100)
+    receiver_name= models.CharField('收货人姓名',blank=True,null=True,max_length=100)
+    receiver_phone= models.CharField('收货人电话',blank=True,null=True,max_length=100)
+    tid= models.CharField('交易ID',blank=True,null=True,max_length=100)
+    company_name= models.CharField('快递公司',blank=True,null=True,max_length=100)
+    post_fee= models.FloatField('快递费用',blank=True,null=True,max_length=11)
+    weight= models.FloatField('重量',blank=True,null=True,max_length=11)
+    out_sid= models.CharField('快递单号', blank=True, null=True, max_length=100)
+    trade = models.ForeignKey(TradeParent, verbose_name='主订单编号', null=True, blank=True)
+    created = models.DateTimeField('运单创建时间', blank=True, null=True)
+    modified = models.DateTimeField('运单修改时间', blank=True, null=True)
+    # is_verify = models.NullBooleanField('审核结果',default=False)
+
+    def get_trade_status(self):
+        if self.trade is not  None:
+            for status,verbose_name in STATUS_CHOICES:
+                if status == self.trade.status:
+                    return verbose_name
+        return 'None'
+    get_trade_status.short_description = u'订单状态'
+
+    def __unicode__(self):
+        return '%s-%s' %(self.company_name,self.out_sid)
+
+    class Meta:
+        verbose_name = u"快递"
+        verbose_name_plural = u"快递"
+
+class Order(models.Model):
+    """子订单"""
+
+    buyer_rate = models.CharField('买家是否已评价',blank=True,null=True,max_length=100)
+    num_iid = models.CharField('商品数字ID',blank=True,null=True,max_length=100)
+    oid = models.CharField('子订单编号',blank=True,null=True,max_length=100)
+    outer_iid = models.CharField('商家外部条码',blank=True,null=True,max_length=100)
+    refund_status = models.CharField('退款状态',blank=True,null=True,max_length=100)
+    seller_type = models.CharField('卖家类型',blank=True,null=True,max_length=100)
+    status = models.CharField('订单状态',blank=True,null=True,max_length=100,choices=STATUS_CHOICES)
+    title = models.CharField('商品标题',blank=True,null=True,max_length=200)
+    num = models.IntegerField('购买数量',default=0,blank=True,null=True)
+    adjust_fee = models.FloatField('手工调整金额',default=0,blank=True,null=True)
+    discount_fee = models.FloatField('子订单级订单优惠金额',default=0,blank=True,null=True)
+    payment = models.FloatField('子订单实付金额',default=0,blank=True,null=True)
+    price = models.FloatField('商品价格',default=0,blank=True,null=True)
+    total_fee = models.FloatField('应付金额',default=0,blank=True,null=True)
+    trade = models.ForeignKey(TradeParent, verbose_name='主订单编号')
+
+    def __unicode__(self):
+        return 'Order %s' %self.oid
+
+    class Meta:
+        verbose_name = u"子订单"
+        verbose_name_plural = u"子订单"
+
 class Danpin(models.Model):
+    """单品"""
     bianhao         = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'单品编号')
     pinming         = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'品名')
     leixing            = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'类型')
@@ -43,6 +228,20 @@ class Taocan(models.Model):
             tc_detail = TaocanDetail.objects.get_or_create(danpin=danpin,count=count)[0]
             self.taocandetail.add(tc_detail)
 
+    def get_purchase_price(self):
+        """套餐进价"""
+        pkgProduct_details = self.packagedetail_set.all()
+        #单品费用比率 = 单品数量*单品进价 / 套餐进价
+        taocan_all_amount = 0
+        
+        for detail in pkgProduct_details :
+            #单品金额=单品进价 * 单品个数
+            single_all_amount = detail.single_product.purchase_price * detail.single_product_count
+            #套餐进价 = 多个（单品数量*单品进价)
+            taocan_all_amount= taocan_all_amount + single_all_amount
+
+        return taocan_all_amount
+
     def get_signPro_ratio(self):
 
         pkgProduct_details = self.packagedetail_set.all()
@@ -56,7 +255,7 @@ class Taocan(models.Model):
             #单品金额=单品进价 * 单品个数
             single_all_amount = detail.single_product.purchase_price * detail.single_product_count
             xmap[detail.single_product] = single_all_amount
-            #套餐进价 = 多个（单品数量*单品进价）
+            #套餐进价 = 多个（单品数量*单品进价)
             taocan_all_amount = taocan_all_amount + single_all_amount
         
         # print pkgProduct_details
@@ -205,7 +404,7 @@ class Dingdan(DingdanPtr):
         if pkg_pros.count() == 0 :
             single_product = Danpin.objects.get(tiaoma=self.tiaoxingma)
             order_detail = DingdanDetail()
-            order_detail.initInfos( self,single_product.bianhao,self.dinghuo_shuliang,self.chanpin_chengjiaojine )
+            order_detail.initInfos(self,single_product.bianhao,self.dinghuo_shuliang,self.chanpin_chengjiaojine )
             return [order_detail]
         
         else :            
@@ -235,17 +434,6 @@ class Dingdan(DingdanPtr):
         DingdanDetail.objects.filter(dingdan=self).delete()
         order_details = self.getOrderDetails()
         self.dingdandetail_set = order_details
-
-    def colored_name(self):
-        return format_html('<div><span width:20px>{0}</span><span width:20px>{0}</span><br>{1}<br>{2}</span><span>{0}<br>{1}<br>{2}</span></div>',
-                           self.kuaidi_danhao,
-                           self.chulizhuangtai,
-                           self.chanpin_name)
-                # return format_html('<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>',
-                #            self.kuaidi_danhao,
-                #            self.chulizhuangtai,
-                #            self.chanpin_name)
-
 
 
     class Meta:
@@ -307,6 +495,9 @@ class DingdanDetail(DingdanPtr) :
         self.tiaoxingma = ptrDingdan.tiaoxingma
         self.waibu_danhao = ptrDingdan.waibu_danhao
         self.wangdian_pinming = ptrDingdan.wangdian_pinming
+        self.in_pocke_post_fee = ptrDingdan.in_pocke_post_fee
+        self.out_pocke_post_fee = ptrDingdan.out_pocke_post_fee
+
 
 
 
@@ -315,7 +506,7 @@ class DingdanDetail(DingdanPtr) :
     
     danpin_huohao = models.CharField(max_length=255, blank=True,null=True,verbose_name=u'单品货号')
     danpin_count = models.IntegerField(null=True,verbose_name=u'单品数量')
-    danpin_jiage = models.FloatField( verbose_name=u'单品价格')
+    danpin_jiage = models.FloatField( verbose_name=u'单品分拆价格')
 
     def __unicode__(self) :
         return 'Order_Detail %s' % self.dingdan_bianhao

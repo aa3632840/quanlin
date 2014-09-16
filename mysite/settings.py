@@ -57,9 +57,8 @@ INSTALLED_APPS = (
     'cron',
     'xadmin',
     'crispy_forms',
-    'southtut',
-     'quanlin',
-     'oa',
+    'quanlin',
+    'oa',
 
 )
 
@@ -76,11 +75,11 @@ MIDDLEWARE_CLASSES = (
 )
 
 CRON_CLASSES = [
-    "cron.test_shell.MyCronJob",
-    "django_cron.cron.FailedRunsNotificationCronJob",
-    
+    "quanlin.down_trade_engins.taobao_engin.TaobaoDownTradeCronJob",
+    "quanlin.mycron.MyCronJob",
 ]
-FAILED_RUNS_CRONJOB_EMAIL_PREFIX = "[Server check]: "
+
+FAILED_RUNS_CRONJOB_EMAIL_PREFIX = "[likangwei@quanlinbense.com]: 3632840aa"
 
 ROOT_URLCONF = 'mysite.urls'
 

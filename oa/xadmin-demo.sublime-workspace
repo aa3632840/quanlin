@@ -1,0 +1,785 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mm",
+				"m2m	ManyToManyField (m2m)"
+			],
+			[
+				"DEVICE_",
+				"DEVICE_HOST	statement"
+			],
+			[
+				"F",
+				"Female	statement"
+			],
+			[
+				"inline",
+				"inlines"
+			],
+			[
+				"dingdan",
+				"dingdan_bianhao	statement"
+			],
+			[
+				"chanpin",
+				"chanpin_chengjiaojine	statement"
+			],
+			[
+				"orde",
+				"order_detail_list	statement"
+			],
+			[
+				"reload",
+				"reloadtest	function"
+			],
+			[
+				"relo",
+				"reloadtest	function"
+			],
+			[
+				"me",
+				"Meta	class"
+			],
+			[
+				"Din",
+				"DingdanDetailAdmin	class"
+			],
+			[
+				"import",
+				"zipimport"
+			],
+			[
+				"tc_det",
+				"tc_details"
+			],
+			[
+				"package",
+				"PackageDetail"
+			],
+			[
+				"single",
+				"single_product_count"
+			],
+			[
+				"danpin",
+				"danpin_name"
+			],
+			[
+				"taocande",
+				"taocandetail"
+			],
+			[
+				"Fa",
+				"False	keyword"
+			],
+			[
+				"poll",
+				"Poll"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/code/python/django-xadmin-master/demo_app/app/adminx.py",
+			"settings":
+			{
+				"buffer_size": 7286,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pce",
+				"Package Control: Enable Package→启用程序包"
+			],
+			[
+				"pcd",
+				"Package Control: Disable Package→禁用程序包"
+			],
+			[
+				"setpy",
+				"Set Syntax: Python"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages→列出程序包"
+			],
+			[
+				"pke",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"se pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"set pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"install",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package→删除程序包"
+			],
+			[
+				"pkg r",
+				"Package Control: Remove Package→删除程序包"
+			],
+			[
+				"django",
+				"Django: Help"
+			],
+			[
+				"d",
+				"Django: Run Server"
+			],
+			[
+				"Django",
+				"Django: Shell"
+			],
+			[
+				"django:",
+				"Django: Check"
+			],
+			[
+				"pci",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"禁用",
+				"Package Control: Disable Package→禁用程序包"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package→升级程序包"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package→删除程序包"
+			],
+			[
+				"an",
+				"Anaconda: Next lint error"
+			],
+			[
+				"packa",
+				"Package Control: List Packages→列出程序包"
+			],
+			[
+				"启用",
+				"Package Control: Enable Package→启用程序包"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Model"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"",
+				"Convert Case: Title Case→首字母大写"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"list",
+				"Package Control: List Packages→列出程序包"
+			],
+			[
+				"package in",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"packagei",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"in",
+				"Package Control: Install Package→安装程序包"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package→删除程序包"
+			]
+		],
+		"width": 618.0
+	},
+	"console":
+	{
+		"height": 165.0,
+		"history":
+		[
+			"sublime_jedi_docstring",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/code/python/django-xadmin-master/demo_app",
+		"/D/code/python/django-xadmin-master/demo_app/app"
+	],
+	"file_history":
+	[
+		"/D/code/python/django-xadmin-master/demo_app/app/models.py",
+		"/D/code/python/django-xadmin-master/demo_app/app/adminx.py",
+		"/D/code/python/git/quanlin/quanlin/models.py",
+		"/D/code/python/git/quanlin/quanlin/adminx.py",
+		"/D/code/python/git/quanlin/oa/models.py",
+		"/D/code/python/git/quanlin/oa/migrations/0001_initial.py",
+		"/D/code/python/git/quanlin/static/xadmin/css/xadmin.form.css",
+		"/D/code/python/git/quanlin/django_uwsgi.py",
+		"/C/Users/likang/test.py",
+		"/D/code/python/git/quanlin/manage.py",
+		"/D/code/python/git/quanlin/oa/admin.py",
+		"/D/code/python/git/quanlin/all0826.data",
+		"/D/code/python/git/quanlin/southtut/models.py",
+		"/D/code/python/git/quanlin/oa/adminx.py",
+		"/D/code/python/git/quanlin/quanlin/admin.py",
+		"/D/code/python/git/quanlin/mysite/urls.py",
+		"/D/code/python/git/quanlin/mysite/settings.py.bak",
+		"/D/code/python/git/quanlin/mysite/settings.py",
+		"/D/code/python/git/quanlin/.tags",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/select2/select2_locale_es.js",
+		"/C/Python27/lib/site-packages/django/db/models/fields/__init__.py",
+		"/D/code/python/git/quanlin/build/list/pip-egg-info/List.egg-info/SOURCES.txt",
+		"/D/code/python/git/quanlin/test.sublime-project",
+		"/D/code/python/git/quanlin/build/pip-delete-this-directory.txt",
+		"/D/code/python/git/quanlin/build/list/PKG-INFO",
+		"/D/Sublime Text 3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/code/python/git/quanlin/quanlin/migrations/0002_auto__add_field_danpin_purchase_price2.py",
+		"/D/code/python/git/quanlin/quanlin/templates/quanlin/index.html",
+		"/D/code/python/git/quanlin/static/admin/js/inlines.js",
+		"/D/code/python/git/quanlin/static/xadmin/css/xadmin.widget.select-transfer.css",
+		"/D/code/python/git/quanlin/static/xadmin/js/xadmin.plugin.sortable.js",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/select2/select2_locale_de.js",
+		"/C/Users/likang/Desktop/source.list",
+		"/C/Users/likang/Desktop/sudo pip install tox",
+		"/C/Users/likang/Desktop/README",
+		"/D/code/python/git/quanlin/showsql.sh",
+		"/D/code/python/git/quanlin/synctaocan.bat",
+		"/D/code/python/git/quanlin/synctaocan.sh",
+		"/D/code/python/git/quanlin/test.py",
+		"/D/code/python/git/quanlin/test.sh",
+		"/D/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/likang/Desktop/nginx.conf",
+		"/C/Users/likang/Desktop/李康炜/行政/1 行文规范管理制度.doc",
+		"/C/Users/likang/Desktop/django插件.xls",
+		"/C/Users/likang/Desktop/李康炜/行政/网络科技公司需规范制度.xlsx",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js",
+		"/D/code/python/git/quanlin/更新所有单品进价.sql",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/flot/excanvas.js",
+		"/D/code/python/git/quanlin/static/xadmin/vendor/font-awesome/css/font-awesome.css",
+		"/D/code/python/git/quanlin/static/admin/js/actions.js",
+		"/D/code/python/git/quanlin/quanlin/tests.py",
+		"/C/Users/likang/pip/pip.log",
+		"/C/Users/likang/Desktop/编辑1",
+		"/C/Users/likang/Desktop/test",
+		"/C/Python27/lib/site-packages/xadmin/__init__.py",
+		"/C/Python27/lib/site-packages/django/core/serializers/__init__.py",
+		"/C/Python27/lib/site-packages/django/__init__.py",
+		"/C/Users/likang/Desktop/mysite/test.sublime-project",
+		"/D/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Sublime Text 3/Data/Packages/User/JSON.sublime-settings",
+		"/D/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/Sublime Text 3/Data/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/likang/Desktop/mysite/quanlin/adminx.py",
+		"/C/Users/likang/Desktop/code/192.168.0.128myse.pro.sublime-project",
+		"/C/Users/likang/zui.py",
+		"/C/Python27/Lib/os.py",
+		"//192.168.0.128/share/django/mysite/quanlin/adminx.py",
+		"/D/Sublime Text 3/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/D/Sublime Text 3/Data/Packages/User/Distraction Free.sublime-settings",
+		"//192.168.0.128/share/django/mysite/quanlin/views.py",
+		"//192.168.0.128/share/django/mysite/test.py",
+		"/D/Sublime Text 3/Data/Packages/SublimeCodeIntel/.codeintel/config",
+		"//192.168.0.128/share/django/mysite/quanlin/admin.py",
+		"//192.168.0.128/share/django/mysite/quanlin/tests.py",
+		"/D/Sublime Text 3/Data/Packages/SublimeREPL/config/Python/Main.sublime-menu",
+		"//192.168.0.128/share/django/mysite/quanlin/models.py",
+		"//192.168.0.128/share/django/mysite/quanlin/templates/quanlin/detail.html",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.ca.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/css/xadmin.page.dashboard.css",
+		"//192.168.0.128/share/django/mysite/static/admin/js/prepopulate.js",
+		"/D/Sublime Text 3/Data/Packages/SublimeREPL/config/Python/Default.sublime-commands",
+		"/d/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/d/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"//192.168.0.128/share/django/mysite/static/admin/css/dashboard.css",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/bootstrap-datepicker/js/locales/bootstrap-datepicker.nb.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/snapjs/snap.min.js",
+		"/d/Sublime Text 3/Data/Packages/User/SublimeLinter.sublime-settings",
+		"//192.168.0.128/share/django/mysite/quanlin/templates/quanlin/index.html",
+		"//192.168.0.128/share/django/mysite/static/admin/js/inlines.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/css/xadmin.widget.select-transfer.css",
+		"//192.168.0.128/share/django/mysite/static/xadmin/js/xadmin.plugin.sortable.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/select2/select2_locale_de.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/select2/select2_locale_pt-BR.js",
+		"//192.168.0.128/share/django/mysite/all.data",
+		"//192.168.0.128/share/django/mysite/static/admin/js/urlify.js",
+		"//192.168.0.128/share/django/mysite/static/xadmin/vendor/autotype/index.js",
+		"/C/Users/likang/Downloads/Untitled0 (1).py",
+		"/C/Users/likang/Downloads/Untitled0.py",
+		"//10.1.11.130/share/django/mysite/quanlin/models.py",
+		"/C/Users/likang/Desktop/danpin.sql",
+		"//10.1.11.130/share/django/mysite/quanlin/adminx.py",
+		"//10.1.11.130/share/django/mysite/build/list/list.py",
+		"//10.1.11.130/share/django/xadmin/demo_app/demo/settings.py",
+		"//10.1.11.130/share/django/mysite/manage.py",
+		"//10.1.11.130/share/django/mysite/mysite/urls.py",
+		"//192.168.0.128/share/django/mysite/mysite/settings.py",
+		"//192.168.0.128/share/django/mysite/myapp/admin.py",
+		"/C/Users/likang/Desktop/xx.html",
+		"//10.1.11.130/share/django/mysite/mysite/settings.py",
+		"//10.1.11.130/share/django/mysite/myapp/tests.py",
+		"//10.1.11.130/share/django/mysite/myapp/models.py",
+		"//10.1.11.130/share/django/mysite/polls/models.py",
+		"/D/code/python/Django-Chinese-Docs/docs/make.bat",
+		"//10.1.11.130/share/django/mysite/polls/templates/polls/index.html",
+		"//10.1.11.130/share/django/mysite/polls/templates/index.html",
+		"/C/Users/likang/Desktop/时间记录.xls",
+		"/C/Users/likang/Desktop/FormdesignV4_1_Ueditor1_4_x_Thinkphp3_2/wwwroot/Public/js/demo.html",
+		"/C/Users/likang/Desktop/test2_main.txt",
+		"/C/Users/likang/Desktop/test_k_main.txt",
+		"/C/Users/likang/Desktop/info.htm",
+		"/C/Users/likang/Desktop/打印机配置教程.html",
+		"/C/Users/likang/Desktop/config.php",
+		"/C/Users/likang/Desktop/库存盘点.xls",
+		"/C/Users/likang/Desktop/phpwind/phpwind/aCloud/version/phpwind/customized/ver.customized.attupload.php",
+		"/C/Users/likang/Desktop/phpwind/phpwind/u/require/jobcenter/jobcenter.php",
+		"/C/Users/likang/Desktop/web.py",
+		"//192.168.40.128/share/webpy/todolist/model.py",
+		"//192.168.40.128/share/webpy/todolist/web/db.py"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\code\\python\\git\\quanlin",
+			"\\\\192.168.0.128\\share\\django\\mysite",
+			"\\\\10.1.11.130\\share\\django\\xadmin\\demo_app",
+			"\\\\10.1.11.130\\share\\django\\mysite",
+			"\\\\10.1.11.130\\share\\django\\mysite\\quanlin",
+			"\\\\10.1.11.130\\share\\django\\mysite",
+			"C:\\Users\\likang\\Desktop\\phpwind\\phpwind",
+			"\\\\192.168.40.128\\share\\webpy\\todolist\\web",
+			"E:\\software\\开发类\\框架\\企业WIKI\\TWiki-6.0.0\\twiki",
+			"F:\\设计组文件备份",
+			"\\\\192.168.40.128\\share\\www",
+			"1号店美之妍.txt"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Django Xadmin",
+			"ForeignKey",
+			"BatchChangeAction",
+			"data",
+			"hosts",
+			"manyto",
+			"inlines",
+			"True",
+			"blank",
+			"Gender_Choices",
+			"xadmin.autodiscover()",
+			"auto",
+			"quanlin",
+			"    ",
+			"Gender_Choices",
+			"Female",
+			"进价",
+			"  ",
+			"install",
+			"tid",
+			"resultNum",
+			"storage_id",
+			"50",
+			"include",
+			"dark",
+			"	",
+			"电话",
+			"dianhua",
+			"收",
+			"产品编号",
+			"产品编号\n",
+			"快递",
+			"快递公司",
+			"发货时间",
+			"订单实收",
+			"print ",
+			"print self.",
+			"DingdanDetail",
+			"danpin_huohao",
+			"get_signPro_ratio",
+			"FloatField",
+			"产品成",
+			"产品报价",
+			"single_produc",
+			"single_product",
+			"single_produc",
+			"module",
+			"app",
+			"verbose_name='",
+			"blank=True",
+			"null",
+			"null=True",
+			"null",
+			" null=True,",
+			"blank=True, ",
+			"blank=True",
+			"blank=True,verbose_na",
+			"blank=True,",
+			"null=True ",
+			"execn",
+			"Taocan",
+			"TaocanDetail",
+			"class Danpin",
+			"Danpin",
+			"PackageDetail",
+			"        \n",
+			"brstr",
+			"taocandetail",
+			"class Taocan",
+			"Taocan",
+			"initInfos",
+			"get",
+			"initInfos",
+			"serializers",
+			"from django.core import serializers",
+			"serialize",
+			"data.json",
+			"json",
+			"data.json",
+			"PROJECT_ROOT",
+			"cris",
+			"TEMPLATE_LOADERS",
+			"LANGUAGES",
+			"fukuan_date",
+			"付款时间",
+			"blank=True)",
+			"null=True)",
+			"short_description",
+			"short",
+			"verbose_name",
+			"fukuan_date",
+			"支付日期",
+			"use",
+			"timezone",
+			"use_time",
+			"America/Chicago",
+			"ord",
+			"app_label = u\"泉林本色\"",
+			"        # app_label = u\"泉林本色\"",
+			"quanlin",
+			"database",
+			"Dingdan",
+			"MaintainInline",
+			"BatchChangeAction",
+			"IDCAdmin",
+			"MaintainInline",
+			"Google",
+			"app_label = u\"泉林本色\"",
+			"danpin",
+			"Danpin",
+			"单品",
+			"u\"泉林本色\"",
+			"       db_table =",
+			"class Ding",
+			"class",
+			"class Dingdan",
+			"Forei",
+			"For",
+			"Fore",
+			"Foreig",
+			"显示全部",
+			"addTaocanDetail",
+			"TaocanDetail",
+			"taocandetail_set",
+			"taocandetail",
+			"taocandetailtaocandetail_set",
+			"taocandetail",
+			"addDanpin"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"verbose_name=u'",
+			"blank=True,null=True",
+			" blank=True",
+			" blank=True,",
+			"",
+			"blank=True,null=True,verbose_na",
+			"blank=True, null=True ",
+			"blank=True,verbose_name='')",
+			"null=True,verbose_name='')",
+			"",
+			"#app_label = u\"泉林本色\"",
+			"\"quanlin\"",
+			"",
+			"C:/Python27",
+			"%.3f",
+			"VLOOKUP(E2,型号品牌对应表!A$1:B$29996,2,0)",
+			"	",
+			"",
+			"    ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/code/python/django-xadmin-master/demo_app/app/adminx.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								368,
+								368
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"function_name_status_row": 10,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "xadmin-demo.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"models",
+				"oa\\models.py"
+			],
+			[
+				"adminx",
+				"quanlin\\adminx.py"
+			],
+			[
+				"settings",
+				"mysite\\settings.py"
+			],
+			[
+				"",
+				"quanlin\\models.py"
+			],
+			[
+				"web.py",
+				"web\\test.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\likang\\Desktop\\code\\192.168.0.128myse.pro.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

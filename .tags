@@ -217,6 +217,7 @@ getWidthOrHeight	.\static\admin\js\jquery.js	/^function getWidthOrHeight( elem, 
 getWidthOrHeight	.\static\xadmin\vendor\jquery\jquery.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
 getWindow	.\static\admin\js\jquery.js	/^function getWindow( elem ) {$/;"	f
 getWindow	.\static\xadmin\vendor\jquery\jquery.js	/^function getWindow( elem ) {$/;"	f
+get_signPro_ratio	.\quanlin\models.py	/^    def get_signPro_ratio(self):$/;"	m	class:Taocan
 groupByAxis	.\static\xadmin\vendor\flot\jquery.flot.aggregate.js	/^    function groupByAxis(data,axis) {$/;"	f
 handlerProxy	.\static\xadmin\vendor\jquery-ui\jquery.ui.widget.js	/^			function handlerProxy() {$/;"	f
 handlerProxy	.\static\xadmin\vendor\jquery-ui\jquery.ui.widget.js	/^		function handlerProxy() {$/;"	f
@@ -306,6 +307,8 @@ onPropertyChange	.\static\xadmin\vendor\flot\excanvas.js	/^  function onProperty
 onResize	.\static\xadmin\vendor\flot\excanvas.js	/^  function onResize(e) {$/;"	f
 onResize	.\static\xadmin\vendor\flot\jquery.flot.resize.js	/^        function onResize() {$/;"	f
 onZoomClick	.\static\xadmin\vendor\flot\jquery.flot.navigate.js	/^        function onZoomClick(e, zoomOut) {$/;"	f
+paradit_listi	.\build\list\build\lib.linux-i686-2.7\list.py	/^def paradit_listi(liste, indent = False, limenis = 0):$/;"	f
+paradit_listi	.\build\list\list.py	/^def paradit_listi(liste, indent = False, limenis = 0):$/;"	f
 parseData	.\static\xadmin\vendor\flot\jquery.flot.js	/^        function parseData(d) {$/;"	f
 parseErrors	.\static\xadmin\vendor\flot\jquery.flot.errorbars.js	/^    function parseErrors(series, i){$/;"	f
 parseOptions	.\static\xadmin\vendor\flot\jquery.flot.js	/^        function parseOptions(opts) {$/;"	f
@@ -333,7 +336,6 @@ propFilter	.\static\admin\js\jquery.js	/^function propFilter( props, specialEasi
 propFilter	.\static\xadmin\vendor\jquery\jquery.js	/^function propFilter( props, specialEasing ) {$/;"	f
 quickElement	.\static\admin\js\core.js	/^function quickElement() {$/;"	f
 reduce	.\static\xadmin\vendor\jquery-ui\jquery.ui.core.js	/^		function reduce( elem, size, border, margin ) {$/;"	f
-reloadtest	.\quanlin\models.py	/^def reloadtest():$/;"	f
 removeChildren	.\static\admin\js\core.js	/^function removeChildren(a) {$/;"	f
 removeElement	.\static\xadmin\vendor\bootstrap\js\bootstrap.js	/^    function removeElement() {$/;"	f
 removeEvent	.\static\admin\js\core.js	/^function removeEvent(obj, evType, fn) {$/;"	f
@@ -388,10 +390,10 @@ standardAnimationOption	.\static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^f
 stringParse	.\static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function stringParse( string ) {$/;"	f
 styleDifference	.\static\xadmin\vendor\jquery-ui\jquery.ui.effect.js	/^function styleDifference( oldStyle, newStyle ) {$/;"	f
 syncCssClasses	.\static\xadmin\vendor\select2\select2.js	/^    function syncCssClasses(dest, src, adapter) {$/;"	f
-syncTaocan	.\quanlin\models.py	/^def syncTaocan():$/;"	f
-syncTaocan	.\synctaocan.sh	/^syncTaocan()$/;"	f
 tags	.\static\xadmin\vendor\select2\select2.js	/^    function tags(data) {$/;"	f
 targetIsSelf	.\static\xadmin\vendor\bootstrap-modal\js\bootstrap-modalmanager.js	/^	function targetIsSelf(callback){$/;"	f
+test_Invalide	.\quanlin\tests.py	/^    def test_Invalide(self):$/;"	m	class:testobjectTest
+testobjectTest	.\quanlin\tests.py	/^class testobjectTest(FastFixtureTestCase):$/;"	c
 thresholdData	.\static\xadmin\vendor\flot\jquery.flot.threshold.js	/^        function thresholdData(plot, s, datapoints, below, color) {$/;"	f
 throwException	.\static\xadmin\vendor\flot\excanvas.js	/^  function throwException(s) {$/;"	f
 thunk	.\static\xadmin\vendor\select2\select2.js	/^    function thunk(formula) {$/;"	f

@@ -1,3 +1,5 @@
+paradit_listi	build\list\build\lib.linux-i686-2.7\list.py	/^def paradit_listi(liste, indent = False, limenis = 0):$/;"	f
+paradit_listi	build\list\list.py	/^def paradit_listi(liste, indent = False, limenis = 0):$/;"	f
 DanpinAdmin	quanlin\admin.py	/^class DanpinAdmin(admin.ModelAdmin):$/;"	c
 DingDanAdmin	quanlin\admin.py	/^class DingDanAdmin(admin.ModelAdmin):$/;"	c
 DingDanInline	quanlin\admin.py	/^class DingDanInline(admin.TabularInline ):$/;"	c
@@ -20,10 +22,11 @@ addTaocanDetail	quanlin\models.py	/^    def addTaocanDetail(self,danpin=None,cou
 colored_name	quanlin\models.py	/^    def colored_name(self):$/;"	m	class:Dingdan
 getDingdanDetails	quanlin\models.py	/^    def getDingdanDetails(self):$/;"	m	class:Dingdan
 getOrderDetails	quanlin\models.py	/^    def getOrderDetails(self):$/;"	m	class:Dingdan
+get_signPro_ratio	quanlin\models.py	/^    def get_signPro_ratio(self):$/;"	m	class:Taocan
 initInfos	quanlin\models.py	/^    def initInfos(self,ptrDingdan,danpin_huohao,danpin_count,danpin_jiage):$/;"	m	class:DingdanDetail
 pay_Month	quanlin\models.py	/^    def pay_Month(self):$/;"	m	class:Dingdan
-reloadtest	quanlin\models.py	/^def reloadtest():$/;"	f
-syncTaocan	quanlin\models.py	/^def syncTaocan():$/;"	f
+test_Invalide	quanlin\tests.py	/^    def test_Invalide(self):$/;"	m	class:testobjectTest
+testobjectTest	quanlin\tests.py	/^class testobjectTest(FastFixtureTestCase):$/;"	c
 findForm	static\admin\js\SelectFilter2.js	/^function findForm(node) {$/;"	f
 dismissAddAnotherPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function dismissAddAnotherPopup(win, newId, newRepr) {$/;"	f
 dismissRelatedLookupPopup	static\admin\js\admin\RelatedObjectLookups.js	/^function dismissRelatedLookupPopup(win, chosenId) {$/;"	f
@@ -408,7 +411,6 @@ splitVal	static\xadmin\vendor\select2\select2.js	/^    function splitVal(string,
 syncCssClasses	static\xadmin\vendor\select2\select2.js	/^    function syncCssClasses(dest, src, adapter) {$/;"	f
 tags	static\xadmin\vendor\select2\select2.js	/^    function tags(data) {$/;"	f
 thunk	static\xadmin\vendor\select2\select2.js	/^    function thunk(formula) {$/;"	f
-syncTaocan	synctaocan.sh	/^syncTaocan()$/;"	f
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_PROGRAM_VERSION	5.5.4	//

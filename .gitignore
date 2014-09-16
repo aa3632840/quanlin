@@ -1,2 +1,4 @@
 *.pyc
 *.pyc
+*.xml
+*.pickle

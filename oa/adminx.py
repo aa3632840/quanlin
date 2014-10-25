@@ -5,10 +5,9 @@ from models import Device
 from models import Group
 from models import MachineModel
 from models import Brand
-import xadmin
 from xadmin import views
 from xadmin.plugins.batch import BatchChangeAction
-
+import xadmin
 
 class MainDashboard(object):
     widgets = [
@@ -36,8 +35,10 @@ class DeviceInline(object):
 class PersonAdmin(object):
     list_display = (
         'name', 'group', 'position', 'phone_num',
-        'qq_num', 'alipay_num', 'email')
+        'qq_num', 'alipay_num', 'email','ip')
+    list_editable = list_display
     actions = [BatchChangeAction, ]
+    batch_fields = ('group', 'position')
     # inlines = [DeviceInline]
 
 

@@ -107,7 +107,7 @@ class Device(models.Model):
         super(Device, self).save(*args, **kwargs)
 
     def __unicode__(self):
-        return self.id
+        return '%s-%s' % ('设备', self.id)
         # return str(self.machine_model)
 
     class Meta:

@@ -4,6 +4,6 @@ import os
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
-import django.core.handlers.wsgi
 os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+import django.core.handlers.wsgi
 application = django.core.handlers.wsgi.WSGIHandler()

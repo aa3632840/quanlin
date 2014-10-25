@@ -52,14 +52,14 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'south',
+    # 'south',
     'django_cron',
     'cron',
     'xadmin',
     'crispy_forms',
     'quanlin',
     'oa',
-
+    'vir2real',
 )
 
 
@@ -125,8 +125,8 @@ DATABASES_RDS = {
     }
 }
 
-DATABASES = DATABASES_LOCAL
-# DATABASES = DATABASES_RDS
+#DATABASES = DATABASES_LOCAL
+DATABASES = DATABASES_RDS
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
